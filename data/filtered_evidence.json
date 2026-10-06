@@ -6,22 +6,265 @@
             "sources": [
                 {
                     "title": "How to Automate Repetitive Coding Tasks with AI",
-                    "url": "https://dev.to/raji_moshood_ee3a4c2638f6/how-to-automate-repetitive-coding-tasks-with-ai-322e",
-                    "snippet": "Mar 1, 2025 · Repetitive coding tasks—such as debugging, refactoring, and code generation—can now be automated using AI, significantly boosting productivity and reducing human error. In this article, we’ll explore how AI can automate coding workflows and the best tools available to streamline your development process. 🔹 Why Automate Coding Tasks?",
-                    "search_query": "Technical documentation on AI-driven tools for repetitive coding tasks",
+                    "url": "https://dev.to/raji_moshood_ee3a4c2638f6/how-to-automate-repetitive-coding-tasks-with-ai-jdl",
                     "evaluation": {
                         "relevance": 1.0,
                         "quality": 0.8,
-                        "reason": "The source directly addresses the sub-question by discussing AI automation of repetitive coding tasks like debugging and refactoring. While the quality is good for a blog post, it lacks depth and citations to academic or industry research, limiting its rigor."
+                        "reason": "The source directly addresses the sub-question by explaining how AI tools automate repetitive tasks like code generation, debugging, and refactoring. It provides specific examples (e.g., GitHub Copilot, Tabnine) and practical implementation steps. However, the quality is slightly lower due to minimal technical depth, lack of citations, and generic explanations, though it remains a useful introductory resource."
                     },
-                    "evidence": {
-                        "claim": "AI agents automate repetitive coding tasks in software development.",
-                        "evidence": "The source states that repetitive coding tasks such as debugging, refactoring, and code generation can be automated using AI, which boosts productivity and reduces human error.",
-                        "confidence": 0.9
-                    }
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "AI agents automate repetitive software development tasks by generating code, refactoring, debugging, and providing real-time suggestions.",
+                            "evidence": "The source text describes tools like GitHub Copilot (code completion), Tabnine (context-aware suggestions), ChatGPT (debugging and code generation), and Sourcery (refactoring) as AI-powered solutions for automating tasks such as debugging, refactoring, code generation, and error fixing. It explicitly states these tools 'significantly boost productivity' and 'reduce human error'.",
+                            "confidence": 0.95
+                        }
+                    ]
+                },
+                {
+                    "title": "AI in software development - IBM",
+                    "url": "https://www.ibm.com/think/topics/ai-in-software-development",
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "quality": 0.85,
+                        "reason": "The source directly addresses the sub-question by detailing long-term changes in software engineering practices driven by AI agents, such as automated code generation, AI-driven testing, CI/CD optimization, and role shifts for developers. It provides specific examples (e.g., IBM Bob, GitHub Copilot) and discusses emerging workflows like no-code/low-code platforms. While the content is promotional (IBM branding), it remains high-quality with technical depth and actionable insights about AI's transformative impact on software development processes."
+                    },
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "AI agents automate repetitive tasks in software development by streamlining code generation, testing, debugging, documentation, and project management.",
+                            "evidence": "The source text describes AI tools automating code generation via natural language processing, generating test cases, detecting bugs, optimizing CI/CD pipelines, and managing documentation. It also mentions AI-driven tools for scheduling, resource allocation, and real-time performance monitoring, which are repetitive tasks in software development.",
+                            "confidence": 0.9
+                        },
+                        {
+                            "chunk_id": 1,
+                            "claim": "AI agents automate repetitive tasks in software development by generating code, optimizing test cases, and streamlining documentation.",
+                            "evidence": "Gen AI assists in code generation and automates repetitive coding tasks. Gen AI automates test case generation and execution... Gen AI automates the creation and updating of documentation...",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 2,
+                            "claim": "AI agents automate repetitive tasks in software development by generating code snippets, functions, and test cases.",
+                            "evidence": "AI-powered tools can assist developers by automatically generating code snippets or entire functions, which significantly reduce development time. AI-driven testing tools can generate test cases, prioritize critical tests and even run tests autonomously.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 3,
+                            "claim": "AI agents automate repetitive tasks in software development by accelerating coding and streamlining workflows.",
+                            "evidence": "The source text states that IBM Bob™ uses intelligent AI agents to 'accelerate coding, automate workflows and modernize your applications,' and mentions minimizing time spent on tasks like writing code, debugging, code refactoring, or code completion.",
+                            "confidence": 0.95
+                        }
+                    ]
+                },
+                {
+                    "title": "Automation In Software Development: A Complete Guide [2026 ...",
+                    "url": "https://devcom.com/tech-blog/automation-in-software-development-a-complete-guide/",
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "quality": 0.9,
+                        "reason": "The source is highly relevant as it directly addresses AI-driven automation in software development, discussing specific tasks like code generation, testing, and deployment. It provides detailed examples, statistics, and trends (e.g., GitHub Copilot, ChatGPT, and market growth data). The quality is excellent due to credible data and practical insights, though some sections are generic and lack deeper analysis of AI agent-specific mechanisms."
+                    },
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "AI agents automate repetitive tasks in software development by reducing manual efforts and enhancing productivity across the SDLC.",
+                            "evidence": "The source states that 73% of respondents reported automated solutions reduced manual efforts, and 25% of Google’s code is AI-generated. It also mentions automation in code generation, testing, deployment, and maintenance, with AI-assisted tools handling tasks like error detection, test data generation, and environment provisioning.",
+                            "confidence": 0.9
+                        },
+                        {
+                            "chunk_id": 1,
+                            "claim": "AI agents automate repetitive tasks in software development by integrating into workflows such as testing, CI/CD, and data processing.",
+                            "evidence": "The source text describes how AI-driven automation adapts test cases to UI changes, prioritizes tests based on risk, reduces manual effort in maintaining test suites, and generates synthetic data for data-intensive systems. It also mentions automated pipelines for SaaS product teams, infrastructure provisioning via IaC for enterprise platforms, and automated security scans in DevSecOps workflows.",
+                            "confidence": 0.9
+                        },
+                        {
+                            "chunk_id": 2,
+                            "claim": "AI agents automate repetitive tasks in software development by generating code, optimizing processes, and handling CI/CD checks, security scans, and real-time documentation.",
+                            "evidence": "The source states that advanced language models are improving at understanding codebases, suggesting optimizations, identifying issues, and automating code generation. It also mentions generative AI tools handling repetitive tasks like CI/CD checks, security scans, and real-time documentation. Additionally, DevSecOps automates security tests, and AIOps market growth reflects automation trends in software development.",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 3,
+                            "claim": "AI agents automate repetitive tasks in software development by providing tools that enhance coding, testing, and data analysis.",
+                            "evidence": "The source mentions AI-based platforms like GitHub Copilot speed up coding with in-line suggestions, API ChatGPT assists with natural language queries and data analysis, Amazon Q specializes in test data generation, integration testing, and code optimizations, and JetBrains AI Assistant enhances workflows with advanced refactoring and auto-generated tests.",
+                            "confidence": 1.0
+                        }
+                    ]
+                },
+                {
+                    "title": "Best practices for using generative AI in software development",
+                    "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-accelerate-software-dev-lifecycle-gen-ai/best-practices.html",
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "quality": 0.9,
+                        "reason": "The source directly addresses the sub-question by detailing how generative AI automates repetitive tasks like code generation, documentation, testing, and project planning. It provides specific examples (e.g., AI-powered code completion, dynamic documentation updates) and integrates these into the SDLC context. The quality is high due to its structured, practical guidance from a reputable source, though it lacks deep technical specifics on AI agent mechanisms."
+                    },
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "AI agents automate repetitive tasks in software development by generating boilerplate code, creating test data, writing documentation, and drafting project plans.",
+                            "evidence": "The source text states: 'Examples of repetitive tasks include generating boilerplate code, creating test data, writing documentation, or even drafting initial project plans. By offloading these tasks to AI, team members can focus on more creative and strategic work.' It also mentions AI-powered code-completion tools, generative AI for documentation updates, and AI-generated test cases based on requirements and code analysis.",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 1,
+                            "claim": "AI agents automate repetitive tasks in software development by optimizing CI/CD pipelines, generating documentation, and analyzing operational data.",
+                            "evidence": "The source mentions using generative AI to analyze log data in real time, predict system failures, automate routine maintenance tasks, and generate/update documentation based on code changes. It also describes AI-powered tools for task assignment and project management, which automate repetitive workflows.",
+                            "confidence": 0.8
+                        }
+                    ]
+                },
+                {
+                    "title": "The Agent-Centric Enterprise: Why 2-10x Productivity Gains Demand ...",
+                    "url": "https://hdsr.mitpress.mit.edu/pub/0mrfxamu",
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "quality": 0.8,
+                        "reason": "The source is highly relevant for research on AI agent implementation strategies, organizational transformation, and operational efficiency, as it provides a structured 2-month sprint framework with actionable steps and references to industry reports. However, its quality is slightly limited by proprietary data restrictions and a focus on practical guidance over academic analysis, though it cites credible external studies."
+                    },
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "AI agents automate repetitive tasks in software development by reengineering workflows to act as primary actors, leading to significant productivity gains.",
+                            "evidence": "The source mentions a global industrial firm reduced audit reporting time by 92% using AI agents, and Cursor, an AI-native code editor, achieved $100M revenue with 60 people by automating tasks traditionally requiring larger teams. It also describes how agents break goals into subtasks, use tools/APIs, and adjust plans autonomously.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 2,
+                            "claim": "AI agents automate repetitive tasks in software development by efficiently gathering and synthesizing data from multiple sources, enabling strategic decision-making.",
+                            "evidence": "The source describes AI agents at Stora Enso automating data collection (80% of human time) and analysis, with specialized agents like Market Intelligence, Customer Insight, Pricing, and Risk Assessment Agents handling repetitive tasks such as competitor tracking, customer pattern analysis, pricing optimization, and risk evaluation. These agents generate scenarios and simulate competitive responses, reducing manual effort.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 4,
+                            "claim": "AI agents automate repetitive, well-structured tasks by redesigning workflows to make data accessible and decisions explicit.",
+                            "evidence": "The source states: 'Highly repetitive, well-structured tasks are ideal for automation' and describes the A.G.E.N.T. framework's 'Engineer' phase as refactoring processes for straight-through flow, making data accessible, and defining success metrics for autonomous execution.",
+                            "confidence": 0.8
+                        },
+                        {
+                            "chunk_id": 5,
+                            "claim": "AI agents automate repetitive tasks in software development by handling routine data retrieval and response generation.",
+                            "evidence": "The source describes building agent workflows that automate routine tasks, such as responding to incoming email inquiries about product prices and availability by retrieving data from the Enterprise Resource Planning (ERP) system and sending a reply.",
+                            "confidence": 1.0
+                        }
+                    ]
+                },
+                {
+                    "title": "How to Automate Repetitive Coding Tasks with AI in 2026",
+                    "url": "https://prompteddev.com/blog/how-to-automate-repetitive-coding-tasks/",
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "quality": 0.9,
+                        "reason": "The source is highly relevant (1.0) as it directly addresses the sub-question by detailing specific AI tools and workflows for automating repetitive software development tasks like code generation, testing, documentation, refactoring, and tool integration. The quality (0.9) is strong due to practical examples, actionable solutions, and clear tool recommendations (e.g., Cursor, n8n, GitHub Copilot), though some sections repeat tool mentions and lack deeper analysis or citations."
+                    },
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "AI agents automate repetitive tasks in software development by generating code structures, tests, documentation, and performing refactors.",
+                            "evidence": "The source text describes how AI tools like Cursor, Claude Code, and n8n automate tasks such as creating file structures, generating tests, updating documentation, and refactoring code across entire codebases. It also mentions GitHub Copilot's PR review feature for automated code review and n8n workflows for automating data movement between tools.",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 1,
+                            "claim": "AI agents automate repetitive tasks in software development by handling cross-tool workflows and providing in-editor assistance.",
+                            "evidence": "The source describes n8n automating tasks like data migration between GitHub, Jira, and Slack via webhooks, and Cursor Composer enabling in-editor AI for code generation. It also mentions AI-generated tests and workflows reducing manual work such as PR documentation and boilerplate code.",
+                            "confidence": 0.95
+                        }
+                    ]
+                },
+                {
+                    "title": "How to Automate Repetitive Coding Tasks with AI",
+                    "url": "https://dev.to/raji_moshood_ee3a4c2638f6/how-to-automate-repetitive-coding-tasks-with-ai-322e",
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "quality": 0.9,
+                        "reason": "The source directly addresses the sub-question by explaining how AI tools automate repetitive tasks like code generation, refactoring, and debugging. It provides specific examples (GitHub Copilot, Tabnine, ChatGPT) and practical implementation steps. While the content is well-structured and informative, its quality is slightly lower than ideal due to being a blog post rather than a peer-reviewed source, though it still offers accurate and actionable insights."
+                    },
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "AI agents automate repetitive coding tasks in software development by generating code suggestions, refactoring, and debugging.",
+                            "evidence": "The source text states that AI tools like GitHub Copilot, Tabnine, ChatGPT, and Sourcery automate tasks such as code generation, refactoring, debugging, and documentation. It provides examples like Copilot suggesting complete functions instantly and Sourcery optimizing Python code. These tools integrate with IDEs and reduce manual effort while improving code quality.",
+                            "confidence": 0.95
+                        }
+                    ]
+                },
+                {
+                    "title": "How to Use AI to Automate Repetitive Coding Tasks – Djamware",
+                    "url": "https://www.djamware.com/post/how-to-use-ai-to-automate-repetitive-coding-tasks",
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "quality": 0.8,
+                        "reason": "The source is highly relevant as it directly addresses how AI agents automate repetitive tasks in software development, providing concrete examples like boilerplate code generation, unit testing, refactoring, and documentation. The quality is good with practical explanations and tool examples (e.g., GitHub Copilot, ChatGPT), but some sections repeat similar structures (e.g., 'Time-Saving' sections) and lack deeper analysis of AI's broader impact on software engineering workflows."
+                    },
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "AI tools automate repetitive coding tasks in software development by generating boilerplate code, creating unit tests, refactoring code, and documenting APIs.",
+                            "evidence": "The source text describes how AI-powered tools like GitHub Copilot, ChatGPT, and Tabnine automate tasks such as generating boilerplate code for REST APIs, creating unit tests, refactoring code for readability, and documenting APIs. It also mentions specific examples like automating CRUD operations and reducing manual test case writing.",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 1,
+                            "claim": "AI agents automate repetitive tasks in software development by generating boilerplate code, unit tests, refactoring code, and creating documentation.",
+                            "evidence": "The source text describes how AI tools like GitHub Copilot and ChatGPT generate scaffolding code for CRUD routes, automate unit test creation, refactor messy code into efficient implementations, and produce documentation like API references and README files. Specific examples include generating Express.js CRUD routes, JUnit tests, optimized functions, and Swagger documentation.",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 2,
+                            "claim": "AI agents automate repetitive tasks in software development by generating documentation, boilerplate code, unit tests, and refactoring code.",
+                            "evidence": "The source text states: 'AI might provide: ✅ With minimal effort... generate a README.md... AI would scaffold a professional-looking README file... AI can be a powerful ally... Use AI for CRUD, tests, and refactoring.' It also mentions 'AI excels at generating boilerplate, repetitive patterns, and documentation' and 'AI can write unit tests that improve code coverage' and 'refactor and optimize messy or inefficient code'.",
+                            "confidence": 1.0
+                        }
+                    ]
+                },
+                {
+                    "title": "6 Best AI Tools for Coding Documentation in 2026 - index.dev",
+                    "url": "https://www.index.dev/blog/best-ai-tools-for-coding-documentation",
+                    "evaluation": {
+                        "relevance": 0.7,
+                        "quality": 0.8,
+                        "reason": "The source is relevant as it discusses AI tools (e.g., GitHub Copilot, Mintlify) that automate documentation tasks, directly addressing repetitive software development work. However, its focus is narrow (primarily on documentation) and lacks broader context about AI agents' role in other repetitive tasks. The quality is high with practical examples and tool-specific details, though the content leans toward product promotion rather than academic analysis."
+                    },
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "AI tools automate code documentation tasks by generating, enhancing, and managing technical documentation.",
+                            "evidence": "AI tools analyze codebases and provide documentation that is consistent, context-aware, and updated in real time. GitHub Copilot suggests code completions, docstrings, comments, and documentation automatically while coding. Mintlify automatically generates clear, easy-to-read documentation for codebases with minimal effort.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 1,
+                            "claim": "AI agents automate repetitive documentation tasks in software development by generating code comments, docstrings, and explanations.",
+                            "evidence": "The source describes tools like Qodo, AskCodi, and Sourcery that automatically analyze codebases, generate documentation for functions/methods, suggest docstrings/comments, and integrate with IDEs to keep documentation updated in real-time.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 2,
+                            "claim": "AI tools automate repetitive documentation tasks in software development by generating, maintaining, and synchronizing code documentation with the codebase.",
+                            "evidence": "GitHub Copilot auto-generates docstrings and comments in real-time during coding, Qodo integrates with IDEs to maintain documentation within the codebase, and Sourcery automatically improves code readability and adds documentation suggestions. These tools reduce manual effort and ensure documentation stays current with code changes.",
+                            "confidence": 0.95
+                        }
+                    ]
+                },
+                {
+                    "title": "How to Use AI to Automate Repetitive Coding Tasks",
+                    "url": "https://converter.brightcoding.dev/blog/how-to-use-ai-automate-repetitive-coding-tasks",
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "quality": 0.9,
+                        "reason": "The source directly addresses the sub-question by explaining how AI agents automate repetitive tasks like boilerplate code, migrations, test generation, and code refactoring. It provides concrete examples, tool recommendations (Copilot, Cursor, terminal agents), and workflow insights. Quality is high with practical advice and cautionary notes, though some claims (e.g., GitHub study results) lack detailed methodology verification and the text contains minor formatting inconsistencies."
+                    },
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "AI agents automate repetitive coding tasks such as boilerplate generation, test framework migration, and mechanical code refactoring.",
+                            "evidence": "The source text explicitly describes AI agents performing tasks like migrating projects between test frameworks (e.g., Jest to Vitest), generating scaffolding for API endpoints, and refactoring code (e.g., converting variables, extracting repeated blocks). It also mentions tools like terminal agents (Claude Code/Codex) handling cross-file migrations and test generation.",
+                            "confidence": 0.95
+                        }
+                    ]
                 }
-            ],
-            "source_count": 1
+            ]
         },
         {
             "question": "What role do AI agents play in code generation and debugging?",
@@ -29,118 +272,735 @@
                 {
                     "title": "A Survey on Code Generation with LLM-based Agents - arXiv.org",
                     "url": "https://arxiv.org/html/2508.00083v1",
-                    "snippet": "Abstract Code generation agents powered by large language models (LLMs) are revolutionizing the software development paradigm. Distinct from previous code generation techniques, code generation agents are characterized by three core features. 1) Autonomy: the ability to independently manage the entire workflow, from task decomposition to coding and debugging. 2) Expanded task scope ...",
-                    "search_query": "Role of AI agents in code generation and debugging: research studies",
-                    "evaluation": {
-                        "relevance": 0.95,
-                        "quality": 0.9,
-                        "reason": "The source directly addresses code generation with LLM-based agents, which is central to the sub-question. The abstract highlights autonomy, task scope, and workflow management features that align with AI agents' roles in code generation and debugging. As a survey on the topic, it provides comprehensive insights, though its preprint status may slightly affect quality compared to peer-reviewed works."
-                    },
-                    "evidence": {
-                        "claim": "AI agents are playing a significant role in code generation and debugging by autonomously managing the software development workflow.",
-                        "evidence": "Code generation agents powered by LLMs are characterized by autonomy, enabling them to independently manage the entire workflow from task decomposition to coding and debugging.",
-                        "confidence": 1.0
-                    }
-                },
-                {
-                    "title": "Autonomous Agents in Software Engineering: A Multi-Agent LLM Approach",
-                    "url": "https://www.researchgate.net/publication/388834987_Autonomous_Agents_in_Software_Engineering_A_Multi-Agent_LLM_Approach",
-                    "snippet": "This paper explores a multi-agent LLM approach, where autonomous agents perform various roles such as requirement analysis, code generation, testing, and debugging.",
-                    "search_query": "Role of AI agents in code generation and debugging: research studies",
                     "evaluation": {
                         "relevance": 0.9,
                         "quality": 0.8,
-                        "reason": "The source directly addresses code generation and debugging through a multi-agent LLM framework, aligning closely with the sub-question. The approach appears innovative and specific, though the quality is slightly tempered by limited detail in the snippet."
+                        "reason": "The source is highly relevant as it directly addresses challenges and future directions of LLM-based code generation agents, covering technical limitations, multi-agent collaboration issues, evaluation methods, and paradigm shifts in software development. The quality is strong due to detailed technical analysis and structured discussion of key challenges, though some sections show fragmented repetition and limited citations beyond [163]."
                     },
-                    "evidence": {
-                        "claim": "AI agents play a role in code generation and debugging within software engineering.",
-                        "evidence": "The paper states that autonomous agents perform various roles including code generation and debugging as part of a multi-agent LLM approach.",
-                        "confidence": 1.0
-                    }
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "AI agents play a role in code generation and debugging by managing the full software development lifecycle (SDLC) and handling complex tasks beyond single LLM capabilities.",
+                            "evidence": "Code generation agents can simulate the complete workflow of human programmers, including analyzing requirements, writing code, running tests, diagnosing errors, and applying fixes. They address limitations of single LLMs by autonomously decomposing tasks, interacting with development environments, and implementing continuous self-correction mechanisms.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 1,
+                            "claim": "AI agents play a significant role in code generation and debugging by handling complex software development tasks beyond traditional code completion.",
+                            "evidence": "The source states that code generation agents can handle tasks like implementing entire projects, testing, refactoring, iterative optimization, and managing ambiguous requirements. It also mentions challenges such as logical defects in generated code requiring manual debugging efforts.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 2,
+                            "claim": "AI agents based on large language models (LLMs) play a significant role in code generation by addressing limitations of traditional methods.",
+                            "evidence": "The source text discusses how code generation agents, powered by LLMs, overcome three fundamental limitations of traditional code generation techniques: insufficient contextual understanding, limited generative capacity, and poor generalization. It also highlights the growing academic and industrial interest in integrating these agents into development processes to improve efficiency and automation.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 3,
+                            "claim": "AI agents play a significant role in code generation and debugging by leveraging LLM-based capabilities for tasks like code completion, test generation, and bug fixing.",
+                            "evidence": "The source states that LLM-based agents are applied in software engineering scenarios such as code completion, test code generation, and bug fixing. It also describes how agents use planning, memory, tool usage, and reflection components to handle complex tasks, including interacting with external tools like compilers and search engines, which are critical for debugging and code generation.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 4,
+                            "claim": "AI agents play a role in code generation by enabling task decomposition, tool invocation, and self-correction based on feedback.",
+                            "evidence": "LLM-based agents... endow them with capabilities for task decomposition [70, 71], tool invocation (such as compilers, API documentation queries) [72, 73], and self-correction based on feedback (such as execution errors, user feedback) [74, 75].",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 5,
+                            "claim": "AI agents enhance code generation and debugging through structured planning, tool integration, and feedback mechanisms.",
+                            "evidence": "The text describes methods like GIF-MCTS, PlanSearch, CodeTree, and Tree-of-Code that use multi-path exploration and structured planning for code generation. It also mentions tools like ToolCoder, ToolGen, CodeAgent, ROCODE, and CodeTool that integrate external tools for debugging, error detection, and adaptive backtracking. Additionally, RAG methods are highlighted for retrieving context to improve code generation accuracy.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 6,
+                            "claim": "AI agents enhance code generation and debugging through tool integration, retrieval augmentation, and iterative refinement mechanisms.",
+                            "evidence": "RepoHyper, CodeNav, and AUTOPATCH demonstrate tool integration and retrieval-based code generation. Self-Refine, Self-Iteration, and Self-Debug highlight iterative refinement and self-improvement for debugging, while Knowledge Graph Based Repository-Level Code Generation and cAST emphasize structured retrieval for accurate context.",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 7,
+                            "claim": "AI agents play roles in code generation and debugging through structured task decomposition, iterative repair mechanisms, and self-improvement frameworks.",
+                            "evidence": "The source describes CodeChain's modular self-revision framework for structured code generation, LeDeX's closed-loop self-debugging with stepwise analysis and repair solutions, and multi-agent systems like AgentCoder and CodePori that decompose tasks into stages (e.g., requirement analysis, coding, testing) to improve code correctness. It also mentions feedback models for program repair and datasets generated from iterative processes to enhance code repair capabilities.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 8,
+                            "claim": "AI agents play a significant role in code generation and debugging by collaborating through specialized tasks, self-optimization, and structured workflows.",
+                            "evidence": "The source describes systems like MapCoder (four agents for code generation, debugging), AutoSafeCoder (coder, static analyzer, fuzzer), QualityFlow (LLM agents for testing and quality checking), and CodeCoR (reflection agents for problem localization). It also mentions role-playing mechanisms (ChatDev/MetaGPT) and self-evolutionary frameworks (SEW/EvoMAC) that enhance code quality, robustness, and adaptability through agent collaboration and feedback loops.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 9,
+                            "claim": "AI agents play a significant role in code generation and debugging through collaborative mechanisms and specialized task handling.",
+                            "evidence": "The source discusses systems like Lingma SWE-GPT, which divides tasks into codebase understanding, fault localization, and patch generation (debugging). CodeCoR involves agents in generation, testing, and repair. CANDOR addresses error propagation during collaboration. Additionally, recent studies mention code-generation agents supporting debugging, repair, and test-code generation.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 10,
+                            "claim": "AI agents play a significant role in code generation and debugging by supporting multiple stages of software development, including automated code writing, debugging, repair, and testing.",
+                            "evidence": "The source text states that code-generation agents support automated code writing, debugging and repair, test-code generation, refactoring, optimization, and requirement clarification. It also mentions specific systems like RepairAgent, MAGIS, and HyperAgent that focus on debugging and repair, as well as technologies like DARS and QualityFlow that enhance code generation and debugging processes.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 11,
+                            "claim": "AI agents play a significant role in code generation and debugging by performing tasks such as defect repair, test case generation, and security testing.",
+                            "evidence": "HyperAgent [71] covers the complete lifecycle from problem decomposition to patch verification, SQLFixAgent [126] provides repair candidates and selects optimal solutions, AutoSafeCoder [124] revises code using dual feedback to reduce vulnerabilities, and TestPilot [31] generates test cases with 52.8% branch coverage. These agents demonstrate capabilities in both code generation and debugging workflows.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 12,
+                            "claim": "AI agents play roles in code refactoring, performance optimization, and requirement clarification during code generation.",
+                            "evidence": "The source describes AI agents performing structural code refactoring (e.g., Baumgartner et al. [22], EM-Assist [135], iSMELL [134], Siddeeq et al. [136]), code performance optimization (LASSI-EE [33], SysLLMatic [34]), and requirement clarification (ClarifyGPT [19], TiCoder [138], SpecFix [139]).",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 13,
+                            "claim": "AI agents play a significant role in code generation and debugging through specialized benchmarks and evaluation metrics.",
+                            "evidence": "The source discusses benchmarks like HumanEval, MBPP, APPS, CodeContests, LiveCodeBench, SWE-Bench, and CodeAgentBench, which evaluate agents' capabilities in code generation, debugging (e.g., defect repair), and real-world software development tasks. Metrics like Pass@k and functional correctness are highlighted as core evaluation dimensions.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 14,
+                            "claim": "AI agents play roles in code generation and debugging by automating tasks, collaborating with developers, and improving software quality through specialized evaluation metrics.",
+                            "evidence": "The source text discusses AI agents like Devin, which automates complex software engineering tasks including debugging and deployment. It also mentions tools such as GitHub Copilot and Cursor that assist in coding and collaboration, and evaluates agents based on metrics like task success rate (which involves passing test cases) and execution trajectories, indirectly relating to debugging. Additionally, it highlights the importance of security and code quality metrics, which are critical for debugging and maintaining software.",
+                            "confidence": 0.9
+                        },
+                        {
+                            "chunk_id": 15,
+                            "claim": "AI agents can autonomously perform complex code generation, refactoring, and debugging tasks based on natural language requirements.",
+                            "evidence": "Claude Code is a terminal-native programming agent that can autonomously plan and execute complex code generation, refactoring, and debugging tasks starting from highly abstract natural language requirements.",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 16,
+                            "claim": "AI agents play a significant role in code generation and debugging, but their reliability and debugging challenges are critical issues.",
+                            "evidence": "The source text discusses how AI agents generate code but face hallucination risks, undermining reliability. It also mentions that their complex decision chains and non-deterministic outputs make debugging and repairing problems difficult.",
+                            "confidence": 0.95
+                        }
+                    ]
+                },
+                {
+                    "title": "A Survey on Code Generation with LLM-based Agents - arXiv.org",
+                    "url": "https://arxiv.org/html/2508.00083v1",
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "quality": 0.8,
+                        "reason": "The source is highly relevant as it directly addresses challenges and future directions of LLM-based code generation agents, covering technical limitations, multi-agent collaboration issues, evaluation methods, and paradigm shifts in software development. The quality is strong due to detailed technical analysis and structured discussion of key challenges, though some sections show fragmented repetition and limited citations beyond [163]."
+                    },
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "AI agents play a significant role in code generation and debugging by autonomously managing the software development workflow, including task decomposition, coding, and iterative optimization.",
+                            "evidence": "The source states that code generation agents powered by LLMs can autonomously manage the entire workflow from task decomposition to coding and debugging. They simulate human programmer workflows, including diagnosing errors and applying fixes, and handle complex tasks requiring cross-file context understanding and dynamic debugging.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 1,
+                            "claim": "AI agents in code generation extend beyond traditional code completion tasks to encompass entire software development workflows, including project implementation, testing, refactoring, and iterative optimization.",
+                            "evidence": "The source states that code generation agents can handle tasks like implementing entire projects, testing, refactoring, and iterative optimization based on real-time feedback, which expands the scope beyond traditional code completion tasks.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 2,
+                            "claim": "AI agents, particularly LLM-based agents, play a significant role in code generation by overcoming limitations of traditional methods and improving development efficiency.",
+                            "evidence": "The source text states that code generation agents have shown tremendous potential since 2023, addressing traditional limitations such as insufficient contextual understanding, limited generative capacity, and poor adaptability. It also highlights their role in reducing manual coding costs, improving efficiency, and enabling software development automation.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 3,
+                            "claim": "AI agents play a significant role in code generation and debugging by leveraging LLM-based systems with planning, memory, tool usage, and reflection components.",
+                            "evidence": "The source states that LLM-based agents are used in code generation tasks such as code completion, test code generation, and bug fixing. They integrate components like planning (task decomposition), memory (short-term and long-term), tool usage (external APIs), and reflection (self-correction) to handle complex software engineering tasks.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 4,
+                            "claim": "AI agents enhance code generation by enabling task decomposition, tool invocation, and self-correction based on feedback.",
+                            "evidence": "LLM-based agents integrate generation capabilities with task decomposition, tool invocation (e.g., compilers, API queries), and self-correction via feedback (e.g., execution errors). They construct dynamic workflows with autonomy, interactivity, and iterativity, unlike passive LLM responses.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 5,
+                            "claim": "AI agents enhance code generation and debugging through structured planning, tool integration, and feedback mechanisms.",
+                            "evidence": "The source discusses methods like GIF-MCTS, PlanSearch, and Tree-of-Code that use structured planning (e.g., Monte Carlo Tree Search, tree structures) to improve code generation. It also mentions tools like ToolCoder, CodeAgent, and ROCODE, which integrate external tools for API invocation, error detection, and real-time backtracking, directly supporting debugging. Techniques such as execution feedback, dynamic pruning, and closed-loop mechanisms further highlight their role in debugging.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 6,
+                            "claim": "AI agents enhance code generation and debugging through tool integration, retrieval enhancement, and iterative refinement mechanisms.",
+                            "evidence": "The text describes how agents use external tools (e.g., RepoHyper, CodeNav, AUTOPATCH) for code generation, retrieval systems for context-aware learning, and reflection/self-improvement mechanisms (e.g., Self-Refine, Self-Debug, Self-Repair) to iteratively refine and debug code, improving accuracy and efficiency.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 7,
+                            "claim": "AI agents play a significant role in code generation and debugging through iterative refinement, modular approaches, and collaborative workflows.",
+                            "evidence": "The source describes systems like CodeChain (modular self-revision), LeDeX (closed-loop self-debugging with repair solutions), AgentCoder (three-stage pipeline for coding/testing), and HyperAgent (cross-language code generation via collaboration). These examples demonstrate AI agents' involvement in both code generation and debugging through structured, iterative, and collaborative methods.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 8,
+                            "claim": "AI agents play roles in code generation and debugging through collaboration, feedback loops, specialized tasks, and self-optimization mechanisms.",
+                            "evidence": "The source text describes systems like MapCoder (four agents for recalling examples, planning, generating code, and debugging), AutoSafeCoder (coder agents revising code based on security feedback), QualityFlow (LLM agents generating tests and checking code quality), and MARCO (code generation and performance evaluation agents). It also mentions self-reflection, self-evolution, and role-playing mechanisms (e.g., ChatDev's programmers/testers roles) that enhance code quality and debugging processes.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 9,
+                            "claim": "AI agents play a significant role in code generation and debugging by enabling collaborative workflows, context management, and multi-stage task execution.",
+                            "evidence": "The source describes systems like Lingma SWE-GPT (codebase understanding, fault localization, patch generation), CodeCoR (testing and repair agents), CANDOR (planners and reviewers for error correction), and mentions code-generation agents supporting debugging, test-code generation, and repair as part of the software development lifecycle.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 10,
+                            "claim": "AI agents play a significant role in code generation and debugging by supporting multiple stages of the software development lifecycle.",
+                            "evidence": "The source text states that code-generation agents support automated code writing, debugging and repair, test-code generation, refactoring, optimization, and requirement clarification. Specific examples include RepairAgent (automatically repairing 164 defects), MAGIS (improving GitHub Issue resolution rates), and HyperAgent (covering problem decomposition to patch verification).",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 11,
+                            "claim": "AI agents play a significant role in code generation and debugging by automating defect repair, test case generation, and security testing.",
+                            "evidence": "MAGIS [98] uses multi-agents to improve GitHub Issue resolution, HyperAgent [71] covers the complete lifecycle from problem decomposition to patch verification, SQLFixAgent [126] provides repair candidates, AutoSafeCoder [124] reduces vulnerability rates, and TestPilot [31] generates test cases with 52.8% branch coverage. These agents demonstrate capabilities in code generation, debugging, and testing.",
+                            "confidence": 0.9
+                        },
+                        {
+                            "chunk_id": 12,
+                            "claim": "AI agents play roles in code generation, refactoring, performance optimization, and requirement clarification.",
+                            "evidence": "The source text describes AI agents' applications in structural code refactoring (e.g., Baumgartner et al. [22], EM-Assist [135], iSMELL [134], Siddeeq et al. [136]), performance optimization (LASSI-EE [33], SysLLMatic [34]), and requirement clarification (ClarifyGPT [19], TiCoder [138], SpecFix [139]).",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 13,
+                            "claim": "AI agents play a significant role in code generation and debugging through specialized benchmarks and evaluation metrics.",
+                            "evidence": "The source discusses benchmarks like SWE-Bench for debugging tasks, CodeContests for complex algorithmic problems, and evaluation metrics such as Pass@k to measure functional correctness. It also highlights agents' involvement in real software development scenarios, requiring interaction with codebases and debugging tools.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 14,
+                            "claim": "AI agents play roles in code generation and debugging by acting as collaborative partners and autonomous development teams.",
+                            "evidence": "The source text describes tools like Cursor (collaborative partner for complex code refactoring), Devin (autonomous team for full software engineering tasks including debugging), and Tongyi Lingma (collaborative partner for advanced tasks like program repair). These examples demonstrate AI agents' roles in both code generation and debugging across different collaboration levels.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 15,
+                            "claim": "AI agents play a significant role in code generation and debugging by handling advanced tasks such as multi-file dependency analysis, automated program repair, and complex code generation.",
+                            "evidence": "The source states that methodologies enable AI agents to perform well in advanced collaborative tasks such as multi-file dependency analysis and automated program repair, rather than just simple code completion. Claude Code is highlighted as an example of an agent capable of autonomously planning and executing complex code generation, refactoring, and debugging tasks.",
+                            "confidence": 0.95
+                        }
+                    ]
+                },
+                {
+                    "title": "AI Agentic Programming: A Survey of Techniques, Challenges ...",
+                    "url": "https://arxiv.org/html/2508.11126v1",
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "quality": 0.9,
+                        "reason": "The source is highly relevant for research on AI agentic programming, as it comprehensively covers key challenges (e.g., domain specialization, safety, ethical alignment) and technical approaches (e.g., structured input, verification tools) in software development. Its quality is strong due to detailed analysis, citations of prior work, and discussion of both theoretical and practical aspects, though its dense technical nature may require deeper contextual understanding for specific sub-questions."
+                    },
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "AI agents play a significant role in code generation and debugging by autonomously planning, executing, and refining software development tasks.",
+                            "evidence": "AI agents can generate entire programs or modules from natural language specifications, diagnose and fix bugs using compiler or test feedback, write and execute test cases, refactor code, and interact with external tools like debuggers. They perform iterative, tool-augmented workflows, such as writing code, testing, analyzing issues, and preparing pull requests, while maintaining task consistency and recovering from errors.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 1,
+                            "claim": "AI agents play a significant role in code generation and debugging by autonomously performing software development tasks through iterative, goal-directed processes that integrate external tools and feedback.",
+                            "evidence": "The source explains that AI agentic programming involves LLM-based agents autonomously executing software development tasks in a multi-step, goal-directed manner. These agents reason about tasks, use external tools (like compilers, debuggers, and test runners), and iteratively refine outputs based on feedback. It also highlights capabilities such as autonomous debugging and testing, intelligent code assistance, and automated code maintenance as key roles of AI agents.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 2,
+                            "claim": "AI agents play a role in code generation and debugging through iterative processes involving tool use, feedback, and refinement.",
+                            "evidence": "The source describes an LLM acting as an AI agent that generates code, writes unit tests, executes scripts, identifies failing cases, refines implementations, and produces documentation. It emphasizes iterative refinement, tool integration (e.g., pytest, Flask), and self-correction based on feedback (e.g., test failures) as core features of agentic programming.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 3,
+                            "claim": "AI agents play a significant role in code generation and debugging by invoking tools, adapting to feedback, and leveraging LLMs for task planning and error resolution.",
+                            "evidence": "The source states that AI agentic programming systems can perform tasks like writing, testing, debugging, invoke external tools (e.g., compilers, test runners), adapt based on feedback (e.g., compiler errors), and use LLMs for code generation, task planning, debugging, and natural language interaction. It also highlights how these agents reason about software goals and dependencies, and how models like GPT-5, Claude, and DeepSeek are used in IDEs for code-related tasks.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 4,
+                            "claim": "AI agents play a role in code generation and debugging by integrating external tools, using structured prompting techniques, and employing feedback loops for iterative refinement.",
+                            "evidence": "The source text describes how agentic systems use tools like compilers, debuggers, and test frameworks to validate and refine generated code. It also mentions structured prompting techniques (e.g., chain-of-thought, ReAct) that enable multi-step reasoning and tool use. Feedback mechanisms, such as rerunning tests and revising prompts based on errors, are highlighted as critical for iterative refinement in complex programming tasks.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 5,
+                            "claim": "AI agents play a role in debugging by extending beyond code generation to include testing, debugging, deployment, and maintenance activities.",
+                            "evidence": "agentic programming systems demonstrate proactive behavior and autonomous planning. Furthermore, agentic programming extends beyond code generation to encompass testing, debugging, deployment, and maintenance activities that completion tools typically do not address",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 6,
+                            "claim": "AI agents play roles in code generation and debugging by generating code, planning multi-step tasks, integrating with external tools for validation, and adapting strategies based on feedback.",
+                            "evidence": "The source describes reactive agents like GitHub Copilot generating code based on user input, proactive agents decomposing tasks into subtasks (e.g., adding authentication modules), integration with tools like compilers/debuggers for execution/validation, and adaptive agents modifying strategies based on feedback (e.g., revising implementations after test failures).",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 7,
+                            "claim": "AI agents play a significant role in code generation and debugging by integrating external tools, planning workflows, and executing multi-step programming tasks with minimal human intervention.",
+                            "evidence": "The source states that these agents 'perform multi-step programming tasks with minimal human intervention, often maintaining control over the entire development process from requirement interpretation to code generation and validation.' It also mentions they 'integrate external tools such as debuggers, package managers, or search engines, enabling them to gather information, resolve errors, and optimize code without direct user guidance.' Examples include systems like CAMEL and SWE-Agent, which use collaborative agents for code generation and debugging.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 8,
+                            "claim": "AI agents play a role in code generation and debugging by iteratively fixing logic errors, adjusting request parsing, and refining edge-case handling.",
+                            "evidence": "s may involve multiple cycles of fixing logic errors, adjusting request parsing, and refining edge-case handling. While this maximizes accuracy and robustness, it also increases token consumption and wall-clock time substantially due to repeated code generation and analysis.",
+                            "confidence": 0.9
+                        },
+                        {
+                            "chunk_id": 9,
+                            "claim": "AI agents play a role in code generation and debugging by managing memory and contextual information across iterative tasks.",
+                            "evidence": "The source text describes how agents must store and reason over evolving states, feedback logs, and prior actions during tasks like debugging. It provides an example of an agent analyzing code, generating changes, debugging runtime errors via stack traces, and maintaining context across iterations. It also emphasizes the need for structured memory systems to avoid repeating errors and ensure continuity in multi-step workflows.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 10,
+                            "claim": "AI agents require advanced memory and context management mechanisms to effectively perform code generation and debugging.",
+                            "evidence": "The text explains that agentic programming needs mechanisms for memory and context tracking beyond simple token limits, enabling agents to maintain continuity across interactions. It discusses structured attention mechanisms, hierarchical memory models, retrieval strategies conditioned on task state, and program state tracing for debugging, all of which are critical for code generation and debugging.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 11,
+                            "claim": "AI agents play a role in code generation and debugging by collaborating with human developers, providing iterative feedback, and automating routine tasks.",
+                            "evidence": "The source states that AI agents 'propose ideas, detect errors, suggest improvements, and automate routine tasks' (similar to pair programming), and that they 'collaborate with human developers, receive intermediate feedback and confirmation, and rely on external tools such as compilers, debuggers, and test frameworks'.",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 12,
+                            "claim": "AI agents play a role in code generation and debugging by integrating with domain-specific tools and adapting to specialized requirements.",
+                            "evidence": "The source mentions agents generating Verilog code for hardware synthesis, integrating with tools like static analyzers, fuzzers, and formal verification tools for cybersecurity tasks, and adapting to domain-specific constraints such as memory layout and real-time constraints in embedded systems. It also highlights agents flagging inconsistent code style and suggesting commit messages as part of debugging and code quality checks.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 13,
+                            "claim": "AI agents play a role in code generation and debugging by ensuring correctness, using verification tools, adhering to safety standards, and providing explanations for their decisions.",
+                            "evidence": "The source text discusses how agents can maintain function output consistency during refactoring, apply lightweight verification tools like static analyzers, follow strict coding standards in safety-critical domains, and explain their decisions to enhance transparency. These aspects directly relate to code generation (ensuring correctness, adhering to standards) and debugging (verification tools, explanations).",
+                            "confidence": 0.95
+                        }
+                    ]
+                },
+                {
+                    "title": "Evaluating the Impact of Generative AI on Intelligent ...",
+                    "url": "https://powertechjournal.com/index.php/journal/article/view/1668",
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "quality": 1.0,
+                        "reason": "The source directly addresses code generation and debugging through empirical analysis of AI-assisted tools like GitHub Copilot and OpenAI Codex. It evaluates AI's impact on productivity, code quality, and security risks, aligning closely with the sub-question. The study's methodology (controlled experiments, defect rate metrics) and focus on developer workflows ensure high relevance and quality."
+                    },
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "AI agents play a significant role in code generation and debugging by automating these tasks and improving productivity.",
+                            "evidence": "Generative AI is revolutionizing software development by providing intelligent programming assistance, automating code generation, debugging, and refactoring. The study compares AI-assisted and human-written code using defect rates, maintainability, and adherence to industry standards as key metrics.",
+                            "confidence": 0.9
+                        }
+                    ]
                 }
-            ],
-            "source_count": 2
+            ]
         },
         {
             "question": "How are human-AI collaboration patterns evolving in software engineering workflows?",
-            "sources": [],
-            "source_count": 0
+            "sources": []
         },
         {
             "question": "What impact do AI agents have on software quality and reliability?",
             "sources": [
                 {
-                    "title": "AI-Infused Test Automation Frameworks: Enhancing Software ...",
-                    "url": "https://www.researchgate.net/publication/389362250_AI-Infused_Test_Automation_Frameworks_Enhancing_Software_Quality_and_Reliability",
-                    "snippet": "Feb 1, 2025 · This comprehensive article explores the infusion of AI into test automation frameworks, examining its impact on software quality and reliability.",
-                    "search_query": "Effect of AI-driven development tools on software testing and maintenance reliability",
-                    "evaluation": {
-                        "relevance": 1.0,
-                        "quality": 0.9,
-                        "reason": "The source directly addresses the sub-question by focusing on AI's impact on software quality and reliability through test automation frameworks. The title and snippet indicate a comprehensive exploration of the topic, though the quality score is slightly lower due to the source's platform (ResearchGate) potentially hosting less rigorously peer-reviewed content compared to academic journals."
-                    },
-                    "evidence": {
-                        "claim": "AI-infused test automation frameworks are enhancing software quality and reliability.",
-                        "evidence": "The article explores the infusion of AI into test automation frameworks, examining its impact on software quality and reliability.",
-                        "confidence": 1.0
-                    }
-                },
-                {
-                    "title": "[2609.17698] A Large-Scale Empirical Study of Quality Assurance ...",
-                    "url": "https://arxiv.org/abs/2609.17698",
-                    "snippet": "Large language model (LLM)-based agents are increasingly used across software engineering, web automation, research, and productivity applications. Their integration of planning, memory, tool use, code execution, and external interactions enables greater autonomy but also introduces new reliability, safety, and security risks. We present a large-scale empirical study of quality assurance (QA ...",
-                    "search_query": "Impact of AI agents on software quality and reliability: empirical research studies",
+                    "title": "A Large-Scale Empirical Study of Quality Assurance Practices and Gaps ...",
+                    "url": "https://arxiv.org/html/2609.17698v1",
                     "evaluation": {
                         "relevance": 0.9,
                         "quality": 0.8,
-                        "reason": "The source directly addresses the impact of AI agents on software quality through empirical analysis, making it highly relevant. Its focus on quality assurance and large-scale study contributes to its quality, though the preprint status may slightly affect credibility."
+                        "reason": "The source provides highly relevant empirical analysis of QA practices in LLM-based agents, directly addressing coverage gaps, risk scenarios, and recommendations for improving security. The quality is strong with detailed examples, structured analysis, and methodological rigor, though some limitations (e.g., potential false positives from automated analysis) are acknowledged."
                     },
-                    "evidence": {
-                        "claim": "AI agents impact software quality and reliability by introducing new risks.",
-                        "evidence": "LLM-based agents integrate planning, memory, tool use, code execution, and external interactions, which enable greater autonomy but also introduce new reliability, safety, and security risks.",
-                        "confidence": 0.9
-                    }
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "Current QA practices for LLM-based agents provide only partial protection against high-risk actions and lack comprehensive end-to-end validation.",
+                            "evidence": "The study found that existing QA practices focus on basic functionality and high-risk actions but have fragmented coverage across execution surfaces, safeguards, testing, and risk scenarios. Tests rarely target boundary, adversarial, or multi-step tool-use failures, and risk scenarios are seldom translated into end-to-end QA checks. Model-influenced behavior is not consistently bounded across all execution surfaces.",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 1,
+                            "claim": "AI agents' impact on software reliability is influenced by insufficient QA practices, including inconsistent control application and rare testing of critical failure scenarios.",
+                            "evidence": "The source states that agent projects often have broad execution surfaces with controls like approval, sandboxing, and permission checks, but these are not consistently applied. It also notes that agent-specific tests for boundary, adversarial, or multi-step tool-use failures are rare, and risk scenarios require boundary review rather than being confirmed vulnerabilities. These findings highlight gaps in QA practices affecting reliability.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 2,
+                            "claim": "The source provides evidence on how AI agents' QA practices influence software quality and reliability through structured analysis of execution surfaces, safeguards, testing artifacts, and risk scenarios.",
+                            "evidence": "The study analyzes 157 open-source LLM-based agent projects using a four-layer coding rubric (execution surfaces, safeguards, testing artifacts, risk scenarios) to systematically characterize repository-visible QA evidence. It explicitly examines how projects handle QA challenges related to model-mediated actions, safeguards for sensitive operations, testing artifacts, and risk scenarios, which directly relate to software quality and reliability.",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 3,
+                            "claim": "AI agents introduce specific QA challenges that impact software reliability by creating vulnerabilities such as credential leakage, workspace escape, and host process modification.",
+                            "evidence": "The source text describes issues like 'credential leakage through configuration' (e.g., google-gemini/gemini-cli exposing provider keys), 'workspace escape through file access' (e.g., OpenHands/OpenHands' file access paths), and 'host process and environment modification through commands' (e.g., openai/codex's shell execution paths). These challenges directly affect software reliability by introducing security and control vulnerabilities.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 4,
+                            "claim": "AI agents can impact software reliability through credential leakage and unauthorized access, but practices like secret management and sandboxing mitigate these risks.",
+                            "evidence": "The source text discusses secret management and redaction limiting credential storage/logging, browser domain-scoping controls restricting session data access, and sandboxing mechanisms isolating actions from the host. These practices directly address credential leakage, unauthorized execution, and boundary control issues that could compromise software reliability.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 5,
+                            "claim": "AI agents impact software quality and reliability through specialized testing practices that address both conventional bugs and security risks.",
+                            "evidence": "The source describes four testing-practice categories (conventional tests, security/safety-oriented tests, evaluation/red-team tests, and prompt-injection tests) and provides examples like OpenHands/OpenHands tests for sandbox cleanup, browser-use/browser-use tests for domain restrictions, and google-gemini/gemini-cli tests for shell-safety. It also mentions risk-chain QA challenges such as secret-to-tool and workspace-to-persistent-state chains, which highlight how AI agent behaviors can introduce quality and reliability risks.",
+                            "confidence": 0.9
+                        },
+                        {
+                            "chunk_id": 6,
+                            "claim": "AI agents' implementation of QA practices like authorization controls and sandboxing improves software reliability by mitigating security risks.",
+                            "evidence": "The source describes how practices such as 'authorize the transition to a privileged action' (used in 137/149 secret-to-tool chains) and 'contain execution or state effects' (used in 104/149 secret-to-tool chains) reduce risks. Examples include OpenHands/OpenHands separating workspace state from sandbox execution and openai/codex applying sandbox policy to shell execution, directly linking QA practices to reliability improvements.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 7,
+                            "claim": "AI agents introduce specific QA gaps that affect software reliability by leaving common action routes unprotected and lacking direct safeguards.",
+                            "evidence": "The source text highlights gaps in QA practices for AI agents, such as missing secret-management/redaction practices in vercel-labs/agent-browser for credential routes, and absence of sandbox/isolation practices in 0x4m4/hexstrike-ai for file/command gaps. These gaps directly impact reliability by exposing vulnerabilities in common routes like credentials, file access, and shell commands.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 8,
+                            "claim": "AI agents' quality assurance (QA) practices are common in open-source projects but often insufficient in covering full agent workflows, impacting software reliability.",
+                            "evidence": "The study analyzed 157 open-source LLM-based agent projects and found that while QA practices are common, their coverage across agent workflows remains uneven. The main gap is not whether projects contain QA artifacts but whether those artifacts cover the full agent workflow. Future QA should address this by making tool authority explicit, connecting safeguards to sensitive actions, and adding failure-oriented checks for boundary, adversarial, and multi-step tool-use cases.",
+                            "confidence": 0.7
+                        }
+                    ]
+                },
+                {
+                    "title": "Frontiers | Software quality assurance in the era of Agentic ...",
+                    "url": "https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2026.1936730/full",
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "quality": 1.0,
+                        "reason": "The source directly addresses software quality assurance (SQA) in the context of agentic AI, aligning perfectly with the research sub-question. It is a systematic mapping study published in a reputable journal (Frontiers in Computer Science), demonstrating rigorous academic quality. The inclusion of detailed citations and peer-review process further validates its reliability and relevance to the topic."
+                    },
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "Agentic AI impacts software quality and reliability by improving efficiency, accuracy, and maintainability but faces limitations in scalability, generalizability, and transparency.",
+                            "evidence": "The source states that Agentic AI offers efficiency, accuracy, and maintainability improvements but has limitations involving scalability, generalizability, and transparency. It also mentions role coverage focuses on execution-level stakeholders while managerial roles receive minimal support.",
+                            "confidence": 0.9
+                        },
+                        {
+                            "chunk_id": 2,
+                            "claim": "Agentic AI has the potential to enhance software quality and reliability through autonomous and adaptive Software Quality Assurance (SQA) processes.",
+                            "evidence": "The source describes Agentic AI as capable of maintaining goals related to quality outcomes, autonomously selecting actions, and adapting behavior based on feedback. It links these capabilities to SQA activities requiring continuous adaptation, such as testing and defect analysis. Additionally, it references studies exploring AI's role in SQA, including generative AI for test creation and defect detection, though many focus narrowly on specific techniques.",
+                            "confidence": 0.75
+                        },
+                        {
+                            "chunk_id": 5,
+                            "claim": "AI agents are being integrated into software quality assurance (SQA) activities, influencing planning, process assurance, and product assurance through specific behavioral, architectural, and autonomy dimensions.",
+                            "evidence": "The source discusses the rise in academic studies on Agentic AI in SQA, the classification of Agentic AI into behavior, architecture, and autonomy dimensions, and their application in SQA sub-activities like requirements validation (product assurance) and QA strategy definition (planning). It also notes the focus on how these dimensions affect planning, process assurance, and product assurance activities.",
+                            "confidence": 0.7
+                        },
+                        {
+                            "chunk_id": 6,
+                            "claim": "AI agents enhance software quality through improved testing coverage and efficiency but face limitations in scalability and domain dependence.",
+                            "evidence": "The source states that Agentic AI applications in SQA product assurance improved coverage, prioritization, automation, and execution efficiency in software testing. However, these benefits were accompanied by limitations related to scalability, explainability, validation, and domain dependence.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 7,
+                            "claim": "AI agents enhance software quality by improving early defect detection but face challenges in explainability and integration.",
+                            "evidence": "Diagnostic agents enhanced early defect detection but continued to face explainability and integration challenges (Klemmer et al., 2024; Chowdhury et al., 2024; Namoun et al., 2024; Melo et al., 2025).",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 8,
+                            "claim": "AI agents enhance software quality through test automation and defect analysis but face reliability issues like validation problems and scalability challenges.",
+                            "evidence": "The source states that Agentic systems provide benefits such as test automation (Atul et al., 2024; Nama, 2024; Ji et al., 2025; Liu et al., 2025; Thomas, 2025), coverage enhancement (Baresi et al., 2024; Bouzenia and Pradel, 2025), and defect analysis (Hu et al., 2025; Melo et al., 2025). However, limitations include validation and reliability difficulties (Liu et al., 2025; Thomas, 2025; Melo et al., 2025), scalability and maintenance challenges (Dande et al., 2024; Ji et al., 2025), and model accuracy issues (Hu et al., 2025; Atul et al., 2024; Nama, 2024).",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 9,
+                            "claim": "AI agents enhance software quality and reliability in technical roles through automation and structured task execution but are not yet trusted for strategic quality decisions.",
+                            "evidence": "Agentic AI shows strongest presence in Quality Engineering and Assurance and Development roles, where agents act with higher autonomy (e.g., autopilot or adaptive configurations) for tasks like test execution and code review. These activities are structured, measurable, and have reversible outcomes, supporting reliability. Conversely, roles requiring judgment and accountability (e.g., Quality Governance) show lower autonomy, indicating current distrust in AI for strategic decisions.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 10,
+                            "claim": "AI agents contribute to software quality and reliability, particularly in testing and operational quality assurance.",
+                            "evidence": "The source states that organizations currently obtain the greatest AI value in testing and operational quality assurance (Capgemini and Sogeti, 2024), and that agentic AI is deployed in test-generation and defect-detection tasks which are well-bounded and safe to automate (Maliye, 2024; Nama, 2024; Ale, 2024; Terragni et al., 2025; Baqar and Khanda, 2025; Ji et al., 2025; Helmy et al., 2024; Feldt et al., 2023; Liu et al., 2025; Thomas, 2025; Bouzenia and Pradel, 2025; Namoun et al., 2024; Melo et al., 2025).",
+                            "confidence": 0.85
+                        },
+                        {
+                            "chunk_id": 11,
+                            "claim": "AI agents contribute to improving software quality through automation in testing and defect management but face challenges in scalability and reliability.",
+                            "evidence": "The source states that studies frequently describe autonomous or semi-autonomous agents executing repetitive tasks like test generation and defect management, offering benefits such as productivity improvement and reduced human effort. However, limitations like scalability issues, reasoning reliability, and explainability gaps are also co-reported.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 12,
+                            "claim": "The study suggests that Agentic AI can be systematically adopted in software quality assurance practices.",
+                            "evidence": "The source states that 'the findings and research agenda presented in this study provide a foundation for future research and support the systematic adoption of Agentic AI in software quality assurance practice.'",
+                            "confidence": 0.75
+                        },
+                        {
+                            "chunk_id": 13,
+                            "claim": "AI agents enhance software quality and reliability through automated testing and quality checks.",
+                            "evidence": "Helmy et al. (2024) state, \"AI-driven testing: unleashing autonomous systems for superior software quality using generative AI.\" Durrani et al. (2024) discuss the integration of AI in software engineering phases, which includes quality assurance activities. QualityFlow (2025) describes an agentic workflow controlled by LLM quality checks for program synthesis.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 14,
+                            "claim": "AI agents enhance software quality and reliability through automated testing, predictive analysis, and improved test coverage.",
+                            "evidence": "Sources 40-42, 44-46, 48-50, 52-54, 56-60, 62-64 discuss AI-powered test automation, generative AI for software engineering, and AI-driven tools in quality assurance, highlighting benefits like enhanced test coverage, predictive analysis, and reduction of test smells.",
+                            "confidence": 0.9
+                        }
+                    ]
                 }
-            ],
-            "source_count": 2
+            ]
         },
         {
             "question": "What new skills or competencies are required for software engineers with AI integration?",
             "sources": [
                 {
+                    "title": "10 Software Engineering Skills Needed to Lead in the AI ...",
+                    "url": "https://quantic.edu/blog/2025/01/28/10-software-engineering-skills-needed-to-lead-in-the-ai-economy/",
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "quality": 0.8,
+                        "reason": "The source is highly relevant (1.0) as it directly addresses the research sub-question by listing specific skills like AI strategy, prompt engineering, cloud architectures, CI/CD, and domain-driven design required for AI integration. However, the quality (0.8) is slightly lower due to repetitive content, promotional emphasis on Quantic’s program, and some vague statements about AI capabilities without concrete examples or citations to external research."
+                    },
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "Software engineers with AI integration require skills in AI strategy, full-stack engineering, LLM calling, prompt engineering, orchestration and fine-tuning, cloud services, cloud hosting for model inference, modern software architectures, containerization, leadership, and agile project management.",
+                            "evidence": "The source explicitly lists these skills as key requirements for AI Engineering roles, including AI strategy, full-stack engineering, LLM calling, prompt engineering, orchestration and fine-tuning, cloud services, cloud hosting for model inference, modern software architectures, containerization, leadership, and agile project management practices.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 1,
+                            "claim": "Software engineers with AI integration require new skills such as cloud architectures, AI orchestration frameworks, prompt engineering, and CI/CD practices.",
+                            "evidence": "The source text explicitly mentions cloud architectures, vector stores, retrieval augmented generation, model context management, AI orchestration frameworks, prompt engineering, CI/CD for deploying LLMs, domain-driven design, microservice architectures, and event-driven architectures as essential skills for AI integration.",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 2,
+                            "claim": "Software engineers need advanced AI technical skills, business judgment, and implementation leadership to lead in the AI economy.",
+                            "evidence": "The source states that 72% of organizations have adopted AI in at least one function, making hands-on capability a career differentiator. It also mentions Quantic’s program focuses on combining AI technical fluency, business judgment, and implementation leadership to help organizations build and deploy AI systems.",
+                            "confidence": 0.9
+                        }
+                    ]
+                },
+                {
+                    "title": "Top 13 AI Developer Skills for 2026 [Hiring Guide]",
+                    "url": "https://doit.software/blog/ai-developer-skills",
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "quality": 0.85,
+                        "reason": "The source is highly relevant for understanding AI developer skills in 2026, covering technical expertise (RAG, vector databases, MCPs, LLMs) and soft skills. It provides practical hiring guidance and industry trends. Quality is strong with detailed insights, but some sections are fragmented or repetitive, and the text includes promotional content about DOIT Software, which may reduce objectivity."
+                    },
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "AI integration requires proficiency in multiple programming languages such as Python, Java, C++, and JavaScript.",
+                            "evidence": "The source states that Python is the industry standard for AI development, while proficiency in other languages like Java, C++, and JavaScript indicates versatility and understanding of software engineering principles. It also mentions specific use cases for each language in AI tasks.",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 1,
+                            "claim": "Software engineers with AI integration require skills in cloud platforms, deployment tools, and generative AI model customization.",
+                            "evidence": "The source mentions cloud providers like AWS, Azure, and GCP, deployment techniques like Docker, and skills in customizing generative AI models through prompt engineering and RAG systems.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 2,
+                            "claim": "Software engineers with AI integration require skills in RAG systems, fine-tuning methods (LoRA/QLoRA, SFT, DPO, RLHF), tool use (function calling via MCP), vector databases, and soft skills like communication and ethics.",
+                            "evidence": "The source text details RAG systems combining semantic and keyword search, fine-tuning methods (LoRA/QLoRA, SFT, DPO, RLHF), tool use (function calling via MCP), vector databases for contextual AI applications, and soft skills like critical thinking, communication (B2 language proficiency), and ethical AI practices.",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 3,
+                            "claim": "Software engineers with AI integration require skills in generative AI models, RAG systems, MCPs, and programming languages like Python.",
+                            "evidence": "The source text lists Python plus a second language, working with generative AI models (GPT, Claude, Gemini), building RAG and vector-database systems, agentic AI with MCPs, and hands-on experience with LLM APIs as critical skills for AI developers in 2026.",
+                            "confidence": 0.95
+                        }
+                    ]
+                },
+                {
                     "title": "AI Engineer Skills in 2026: The Complete Checklist",
                     "url": "https://aiengineerinsights.com/blog/ai-engineer-skills/",
-                    "snippet": "Aug 14, 2026 · Here's the honest skill list for an AI engineer in 2026 — the technical core, the LLM skills that define the role today, the soft skills that get you promoted, what to prioritize by seniority, and what's overrated. For each skill: what it means and how to prove you have it. 1. The Skill Stack in One Picture.",
-                    "search_query": "Emerging skills required for software engineers integrating AI technologies",
                     "evaluation": {
                         "relevance": 0.9,
                         "quality": 0.8,
-                        "reason": "The source directly addresses the sub-question by outlining AI-specific skills for engineers, but its quality is slightly lower due to being a blog post rather than a peer-reviewed or academic resource."
+                        "reason": "The source directly addresses the sub-question by detailing specific skills required for AI integration (e.g., LLM/GenAI core, MLOps, evaluation, RAG, agents). It provides practical insights into competencies like probabilistic modeling, tool use, and communication. However, the quality is slightly reduced by promotional language and lack of academic rigor, though the content is detailed and actionable."
                     },
-                    "evidence": {
-                        "claim": "The source discusses new skills required for software engineers integrating AI, but does not specify which skills.",
-                        "evidence": "The snippet mentions a skill list for AI engineers in 2026, categorizing skills into technical core, LLM skills, soft skills, and seniority priorities. However, it does not explicitly detail the specific new competencies or skills required due to AI integration.",
-                        "confidence": 0.5
-                    }
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "The source text identifies new skills required for AI integration in software engineering, including LLM/GenAI core competencies, evaluation, RAG, agents, and MLOps/deployment.",
+                            "evidence": "The source explicitly states that the LLM & GenAI layer is the differentiator for AI engineers, outlines skills like RAG, agents, evaluation, and cost/latency engineering as critical, and emphasizes MLOps/deployment as a required layer. It also highlights evaluation as the most under-practiced yet valued skill.",
+                            "confidence": 0.95
+                        }
+                    ]
+                },
+                {
+                    "title": "Top Skills Required for AI Engineer - GeeksforGeeks",
+                    "url": "https://www.geeksforgeeks.org/artificial-intelligence/top-skills-required-for-ai-engineer/",
+                    "evaluation": {
+                        "relevance": 0.5,
+                        "quality": 0.8,
+                        "reason": "The source provides relevant technical skills for AI engineers (e.g., ML, DL, NLP, programming) that overlap with software engineers integrating AI, but it focuses more on AI-specific roles rather than the broader software engineering context. The content is well-structured and informative, offering practical insights into required competencies, though it lacks depth on how these skills apply specifically to software engineering practices with AI integration."
+                    },
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "Software engineers with AI integration require skills in machine learning algorithms, programming languages like Python, data preprocessing, deep learning architectures, natural language processing, computer vision, reinforcement learning, model deployment, ethical AI principles, and continuous learning.",
+                            "evidence": "The source text explicitly lists these skills as essential for AI engineers in 2024, including expertise in machine learning algorithms, Python, data preprocessing, deep learning architectures, NLP, computer vision, reinforcement learning, model deployment, ethical AI principles, and continuous learning/adaptability.",
+                            "confidence": 0.95
+                        }
+                    ]
+                },
+                {
+                    "title": "AI Integration Engineer: Key Skills & Responsibilities in 2026",
+                    "url": "https://www.secondtalent.com/occupations/ai-integration-engineer/",
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "quality": 0.85,
+                        "reason": "The source is highly relevant (1.0) as it directly addresses the sub-question by detailing specific skills and responsibilities required for AI Integration Engineers, including technical competencies, compliance considerations, and integration patterns. The quality (0.85) is strong due to practical insights and industry-specific examples, though some sections are fragmented and lack citations, reducing its depth for academic analysis."
+                    },
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "AI Integration Engineers require skills in handling non-deterministic AI services, observability, and compliance with audit requirements.",
+                            "evidence": "The text states that AI integrations are non-deterministic, expensive per call, sensitive to latency, and need observability that traditional integrations do not. It also mentions audit, citation, and confidence indicators as part of integration design, along with compliance requirements for regulated contexts.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 1,
+                            "claim": "Software engineers with AI integration require skills in compliance and audit requirements, multi-vendor AI stack management, native platform fluency, classical integration patterns, end-to-end AI integration practices, security playbooks, iPaaS fluency, cross-functional translation, and expertise in both AI and enterprise systems.",
+                            "evidence": "The source explicitly mentions compliance and audit requirements tightening, multi-vendor AI stacks as the norm, native fluency in enterprise platforms, classical integration patterns (REST, webhooks, etc.), end-to-end AI integration with retries and observability, security playbooks, iPaaS fluency (Workato/Tray.io), and cross-functional translation between business, IT, and security teams.",
+                            "confidence": 0.95
+                        }
+                    ]
                 },
                 {
                     "title": "Guide to Essential Competencies for AI",
                     "url": "https://thealliance.ai/core-projects/guide-to-essential-competencies-for-ai",
-                    "snippet": "Inside the guide, you will find essential competencies defined to help bridge the AI divide, which support a framework for education and training curricula and can help promote inclusive access to AI education.",
-                    "search_query": "Competencies needed for AI integration in software engineering roles",
+                    "evaluation": {
+                        "relevance": 0.5,
+                        "quality": 0.8,
+                        "reason": "The source discusses essential AI competencies like machine learning, data analysis, and ethical AI use, which are relevant to the sub-question about new skills for software engineers. However, it does not explicitly focus on software engineering roles or specify skills unique to AI integration in that context. The quality is high due to collaboration with reputable organizations (IBM, Meta) and structured framework, but the lack of direct focus on software engineers limits its relevance."
+                    },
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "The Guide to Essential Competencies for AI identifies specific skills required for AI integration, including responsible and ethical use of AI, data analysis, machine learning, and AI logic.",
+                            "evidence": "These competencies include the responsible and ethical use of AI, identifying data limitations, data analysis, machine learning, and AI logic, and range in levels from fluency to mastery.",
+                            "confidence": 0.95
+                        }
+                    ]
+                },
+                {
+                    "title": "Top 13 AI Developer Skills for 2026 [Hiring Guide]",
+                    "url": "https://doit.software/blog/ai-developer-skills",
                     "evaluation": {
                         "relevance": 0.9,
-                        "quality": 0.8,
-                        "reason": "The source directly addresses the sub-question by focusing on essential competencies for AI, which aligns with identifying new skills for software engineers. However, the quality is slightly lower due to limited detail in the snippet about the specific competencies outlined."
+                        "quality": 0.85,
+                        "reason": "The source is highly relevant for understanding AI developer skills in 2026, covering technical expertise (RAG, vector databases, MCPs, LLMs) and soft skills. It provides practical hiring guidance and industry trends. Quality is strong with detailed insights, but some sections are fragmented or repetitive, and the text includes promotional content about DOIT Software, which may reduce objectivity."
                     },
-                    "evidence": {
-                        "claim": "Software engineers require new skills or competencies to integrate AI effectively.",
-                        "evidence": "The guide defines essential competencies to bridge the AI divide, supporting education frameworks and promoting inclusive access to AI education.",
-                        "confidence": 0.5
-                    }
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "Software engineers with AI integration require proficiency in Python and other programming languages, data handling skills, and knowledge of AI frameworks and machine learning models.",
+                            "evidence": "The source text states that Python is the industry standard for AI, proficiency in other languages (R, Julia, Java, C++, JavaScript) indicates versatility, and AI developers must handle data preprocessing, use frameworks like TensorFlow/PyTorch, and evaluate models with metrics like accuracy and F1 score.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 1,
+                            "claim": "Software engineers with AI integration require skills in combining AI libraries, cloud platforms, deployment techniques, and generative model customization.",
+                            "evidence": "The source text highlights the need for AI developers to understand how to use libraries like TensorFlow, PyTorch, Hugging Face, and OpenCV, combine them for tasks like LLM deployment. It also emphasizes cloud ecosystem familiarity (AWS, Azure, GCP), deployment via Docker, monitoring techniques, and customization skills like prompt engineering and RAG systems for generative models.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 2,
+                            "claim": "Software engineers with AI integration require skills in RAG systems, vector databases, tool use via Model Context Protocol (MCP), and soft skills like critical thinking and communication.",
+                            "evidence": "The source mentions RAG systems combining semantic and keyword search, vector databases for contextual data retrieval, MCP for standardizing tool integration, and soft skills such as critical thinking, communication, and ethics as essential for AI developers in 2026.",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 3,
+                            "claim": "Software engineers with AI integration require skills such as proficiency with generative AI models, RAG systems, MCPs, and production deployment techniques.",
+                            "evidence": "The source text lists 'working with generative AI models like GPT, Claude, Gemini, and open-source LLMs', 'building RAG and vector-database systems', 'agentic AI with MCPs', and 'production deployment with evals and guardrails' as top AI developer skills for 2026.",
+                            "confidence": 0.95
+                        }
+                    ]
+                },
+                {
+                    "title": "AI System Design Documentation",
+                    "url": "https://archiecur.github.io/ai-system-design/",
+                    "evaluation": {
+                        "relevance": 0.6,
+                        "quality": 0.7,
+                        "reason": "The source addresses skills and tools for AI system design, which partially aligns with the sub-question about new competencies for software engineers. However, it focuses more on system design frameworks than explicitly detailing AI-specific skills for engineers. The content is well-structured and practical, but lacks direct mapping to software engineering competencies."
+                    },
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "The source text outlines new skills required for software engineers integrating AI systems, including specifications, tool design, multi-agent systems, and harness engineering.",
+                            "evidence": "The source text details skills such as designing reusable AI capabilities, tool literacy, semantic tagging, multi-agent architectures, pre-inference monitoring, and advanced prompting techniques as part of a unified curriculum for AI system design.",
+                            "confidence": 1.0
+                        }
+                    ]
+                },
+                {
+                    "title": "AI Engineering Skills Map - DeepLearning.AI",
+                    "url": "https://www.deeplearning.ai/resources/ai-engineering-skills",
+                    "evaluation": {
+                        "relevance": 0.7,
+                        "quality": 0.8,
+                        "reason": "The source provides detailed insights into AI engineering practices, agent management, and software development workflows, making it highly relevant for research on AI tool integration and project ownership. However, its usefulness depends on the specific research question, as it lacks focused examples or data. The content is well-structured and practical, though some sections feel repetitive or superficial in depth."
+                    },
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "Software engineers with AI integration require skills in understanding AI foundations, iterative development, agentic systems, and disciplined evaluation loops.",
+                            "evidence": "The source text outlines skills such as understanding AI foundations (e.g., LLM tokenization, model configuration), iterative development (repeatedly building, examining, and adapting systems), agentic systems (choosing workflows, tool integration, and safety measures), and disciplined evaluation loops (systematic error analysis and measurement techniques).",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 1,
+                            "claim": "Software engineers with AI integration require skills in evaluation methodology, observability, machine learning, and full-stack software fundamentals.",
+                            "evidence": "The source states that building good evals is a deep technical skill involving exploratory data analysis and understanding evaluation options (deterministic evaluations, LLM-as-a-judge, human-in-the-loop). It emphasizes observability for production AI systems, understanding machine learning concepts (bias/variance, error analysis), and software fundamentals for agentic coding (full-stack knowledge, data management, tradeoffs in latency/reliability).",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 2,
+                            "claim": "Software engineers with AI integration require skills in using and managing coding agents to optimize development workflows.",
+                            "evidence": "A key AI engineering skill is using coding agents. Your skill at steering them both to write code and to carry out non-code tasks, such as analyzing data or managing system operations, allows you to get a lot more done. The rapid pace of evolution for coding agents means this skill, too, is evolving rapidly, so keeping up with how to use coding agents requires a continuous process of experimentation, building, and learning.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 3,
+                            "claim": "Software engineers with AI integration require new skills in directing workflows, enabling agent autonomy, reviewing agent work, and customizing agents' environments.",
+                            "evidence": "The source text identifies key skills as: (1) Directing the workflow (deciding human/agent effort, tradeoffs, iteration), (2) Enabling agent autonomy (managing context, delegation, security), (3) Reviewing agent work (testing, validation, verification), and (4) Customizing agents (integrating tools, plugins, MCPs, and managing environments).",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 4,
+                            "claim": "Software engineers with AI integration require skills in managing agent contexts, plugins, and MCP servers, as well as product sense and cross-functional leadership.",
+                            "evidence": "You know how to integrate agent skills, plugins, and MCP servers. Occasionally you will prune them when they are no longer necessary... You have a good understanding of how coding agents work... You also have sharp product sense, high agency, and cross-functional leadership.",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 5,
+                            "claim": "AI engineers require enhanced skills in communication, leadership, business acumen, user empathy, and high agency ownership to integrate AI effectively.",
+                            "evidence": "The text states that AI Engineering skills enable participation in cross-functional areas like marketing, finance, and legal, requiring communication to align stakeholders. It emphasizes user empathy through methods like A/B testing and surveys, business sense for economic tradeoffs, and high agency ownership for driving projects end-to-end while measuring value creation.",
+                            "confidence": 0.95
+                        }
+                    ]
                 }
-            ],
-            "source_count": 2
+            ]
         },
         {
             "question": "How do AI agents influence ethical considerations in software development?",
@@ -148,21 +1008,33 @@
                 {
                     "title": "New ethics risks courtesy of AI agents? Researchers are on the case - IBM",
                     "url": "https://www.ibm.com/think/insights/ai-agent-ethics",
-                    "snippet": "Existing AI governance solutions can help support the ethics of AI agents, with software tools already empowering organizations to monitor, evaluate and address biases stemming from training datasets and algorithms that might skew decision-making processes. These tools can also help developers and companies ensure that the AI tools they're using meet current trustworthy AI standards ...",
-                    "search_query": "How do AI agents impact ethical considerations in software engineering?",
                     "evaluation": {
                         "relevance": 0.9,
-                        "quality": 0.7,
-                        "reason": "The source directly addresses ethical risks associated with AI agents and discusses governance tools for ensuring trustworthy AI, making it highly relevant. However, its quality is moderate due to limited depth in analyzing specific ethical challenges or providing detailed case studies."
+                        "quality": 0.85,
+                        "reason": "The source directly addresses the sub-question by discussing ethical risks of AI agents (e.g., alignment challenges, function-calling hallucinations, autonomy risks) and proposed solutions (Alignment Studio, adversarial collaboration). However, quality is slightly reduced by promotional content and repetitive sections, though the technical analysis and citations to IBM research papers maintain credibility."
                     },
-                    "evidence": {
-                        "claim": "AI agents introduce new ethical risks that can be mitigated through existing AI governance solutions.",
-                        "evidence": "Existing AI governance solutions can help support the ethics of AI agents, with software tools already empowering organizations to monitor, evaluate and address biases stemming from training datasets and algorithms that might skew decision-making processes. These tools can also help developers and companies ensure that the AI tools they're using meet current trustworthy AI standards.",
-                        "confidence": 1.0
-                    }
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "AI agents introduce new ethical dilemmas in software development due to their autonomous decision-making capabilities and potential for unintended consequences.",
+                            "evidence": "The source states that agentic AI presents 'expanded set of ethical dilemmas' compared to traditional AI models, citing risks like AI acting without supervision, trust issues, and scenarios such as the paperclip maximizer. It also mentions the need for safeguards, alignment with ethical principles, and tools to monitor biases in AI systems.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 1,
+                            "claim": "AI agents influence ethical considerations in software development by introducing risks such as misbehavior due to function-calling hallucinations, misuse in generating deceptive content, and impacts on human dignity.",
+                            "evidence": "The source mentions function-calling hallucinations leading to inappropriate tool usage, AI-generated deepfakes and phishing emails as ethical risks, and concerns about AI replacing human labor causing psychological consequences like loss of dignity.",
+                            "confidence": 0.8
+                        },
+                        {
+                            "chunk_id": 2,
+                            "claim": "AI agents introduce new ethics risks that require governance frameworks to ensure ethical and compliant software development practices.",
+                            "evidence": "The source discusses challenges of generative AI, the need for governing AI and ML models, building trusted AI frameworks, establishing defensible assessment processes, categorizing use cases into risk tiers, and preparing for regulations like the EU AI Act.",
+                            "confidence": 1.0
+                        }
+                    ]
                 }
-            ],
-            "source_count": 1
+            ]
         },
         {
             "question": "What long-term changes in software engineering practices are emerging due to AI agents?",
@@ -170,37 +1042,274 @@
                 {
                     "title": "Generative AI and the Transformation of Software Development ...",
                     "url": "https://arxiv.org/html/2510.10819v1",
-                    "snippet": "Oct 12, 2025 · This paper examines how AI-assisted techniques are transforming software engineering practices, alongside the emerging challenges of trust, accountability, and required skill shifts.",
-                    "search_query": "Emerging trends in software engineering practices influenced by AI agents",
                     "evaluation": {
-                        "relevance": 0.9,
-                        "quality": 0.8,
-                        "reason": "The source directly addresses AI's impact on software engineering practices and discusses emerging challenges and skill shifts, aligning with the sub-question. However, the snippet's brevity and preprint status limit depth, though the arXiv platform suggests credible academic rigor."
+                        "relevance": 1.0,
+                        "quality": 0.95,
+                        "reason": "The source is highly relevant as it directly addresses AI's role in transforming software development practices, including multilingual programming, diversity in the developer community, and workforce changes. Its quality is excellent, with detailed analysis, structured sections, and practical examples. Minor repetition in conclusions slightly reduces quality, but overall, it provides comprehensive insights into the topic."
                     },
-                    "evidence": {
-                        "claim": "AI agents are leading to long-term changes in software engineering practices.",
-                        "evidence": "The paper examines how AI-assisted techniques are transforming software engineering practices, alongside emerging challenges of trust, accountability, and required skill shifts.",
-                        "confidence": 0.5
-                    }
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "Emerging long-term changes in software engineering practices include new paradigms like Chat-Oriented Programming (CHOP), vibe coding, and agentic programming driven by generative AI.",
+                            "evidence": "The source text describes CHOP as a paradigm where developers interact with AI via iterative dialogue, vibe coding as high-level intent-based development, and agentic programming as semi-autonomous AI agents. It also cites 75% of developers using AI tools by 2023 and productivity gains (e.g., 50% faster coding) as evidence of structural shifts in practices.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 1,
+                            "claim": "AI agents are enabling dialogue-driven and collaborative coding practices in software engineering.",
+                            "evidence": "The source describes 'Chat-based Human-AI Programming' (CHOP) where developers interact with AI assistants through natural language prompts, transforming coding into an iterative, collaborative process. It also introduces 'vibe coding,' where developers express high-level intentions and trust AI to handle low-level implementation, representing a shift from manual coding practices.",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 2,
+                            "claim": "The emergence of AI agents is leading to new software engineering practices such as vibe coding and agentic programming, which shift focus from manual code writing to AI-assisted collaboration and autonomous task execution.",
+                            "evidence": "The text describes 'vibe coding' as a paradigm where developers interact with AI agents using natural language directives, minimizing manual code writing and enabling rapid prototyping. It also introduces 'agentic programming' as an emerging paradigm where AI agents autonomously perform complex tasks like coding and bug fixing without step-by-step human guidance. Both practices represent significant shifts in software engineering practices driven by AI agents.",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 3,
+                            "claim": "Agentic programming is shifting software engineering practices towards automated maintenance and self-healing systems, with developers defining goals rather than writing detailed algorithms.",
+                            "evidence": "The text describes how AI agents autonomously break down problems, coordinate, and produce solutions (e.g., Bug-Fixer agent, Compiler/Runner agent collaboration), moving toward self-healing software. It also states that developers specify goals and equip agents, shifting their role from coding to supervision. Frameworks like Autogen and examples of automated debugging demonstrate this transformation.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 4,
+                            "claim": "Emerging long-term changes in software engineering practices due to AI agents include accountability frameworks, transparency measures, and human oversight in code review.",
+                            "evidence": "Organizations are developing frameworks to embed accountability and transparency into AI-assisted development, such as tagging AI-generated code in version control, restricting AI usage to vetted models, and requiring human developers to review and take ownership of AI-generated code before merging. These practices aim to maintain trust and address the 'trust gap' created by AI contributions.",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 5,
+                            "claim": "Emerging long-term changes in software engineering practices due to AI agents include standardized protocols for context retrieval and cultural shifts in developer-AI collaboration.",
+                            "evidence": "The Model Context Protocol (MCP) is presented as an open standard for AI assistants to interface with external data, enabling plug-and-play integration. Culturally, developers are advised to treat AI as an assistant requiring guidance, akin to pair programming with a junior colleague.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 6,
+                            "claim": "Emerging long-term changes in software engineering practices include the adoption of standardized protocols like MCP for context-aware AI agents and the use of agent clusters for collaborative problem-solving.",
+                            "evidence": "The source describes MCP as an open protocol enabling interoperability between tools and AI agents, fostering an ecosystem of MCP-compatible tools. It also discusses agent clusters (multi-agent systems) where specialized AI agents collaborate on tasks, mimicking team-based software development practices.",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 7,
+                            "claim": "The adoption of AI agent clusters is leading to new software engineering practices involving collaborative, specialized, and adaptive systems.",
+                            "evidence": "The source describes agent clusters as a collaborative approach where multiple AI agents handle different tasks (e.g., code writing, testing, optimization) in loops, enabling complex problem-solving with minimal human oversight. It also draws parallels to traditional concurrency concepts (deadlock, race conditions) and highlights the need for new frameworks to manage these clusters. Additionally, it mentions the shift from static prompt engineering to dynamic prompting strategies as AI integration becomes more sophisticated.",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 8,
+                            "claim": "Dynamic prompting is emerging as a significant shift in software engineering practices, enabling more adaptive and iterative interactions with AI agents.",
+                            "evidence": "The source text describes dynamic prompting as a core approach for advanced LLM applications, contrasting it with static prompt engineering. It highlights features like adaptive context, personalization, programmatic prompt construction, and multi-turn orchestration, which reflect evolving software engineering practices. Examples like error-driven prompting and automated test generation illustrate how AI agents are now integrated into iterative development workflows.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 9,
+                            "claim": "Software engineering practices are evolving towards dynamic prompting and new skill sets due to AI integration.",
+                            "evidence": "The text explains that dynamic prompting, which involves iterative AI interactions, is becoming more prevalent for complex tasks like software development. It also discusses shifts in developer roles (e.g., from coding to curating AI-generated code), the emergence of new competencies like AI orchestration and meta-coding, and the necessity for continuous learning and adaptability to AI advancements.",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 10,
+                            "claim": "Emerging roles like AI Engineer and Prompt Engineer are becoming standard in software development teams due to AI agents.",
+                            "evidence": "The source states: 'We may also see the emergence of roles like AI Engineer or Prompt Engineer formally in teams... Already, job postings for prompt engineering and LLM integration have appeared in industry.'",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 11,
+                            "claim": "Long-term changes in software engineering practices include shifts in workforce composition, cost management strategies, and compliance requirements due to AI agents.",
+                            "evidence": "The text states that generative AI is changing the composition of work (developers spend less time on boilerplate code and more on oversight/creative problem-solving), companies are investing in AI specialists instead of junior developers, and legal/compliance measures are needed to avoid IP issues from AI-generated code.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 12,
+                            "claim": "The rise of AI in software development is causing a generational shift in practices, affecting education, mentorship, and collaboration between developers of different experience levels.",
+                            "evidence": "The text describes how 'AI-native' developers learn differently through AI tools, educators adapt curricula to focus on conceptual understanding, mentorship styles evolve with AI integration, and junior developers now teach seniors about AI tools. It also highlights inter-generational collaboration and changing career trajectories due to AI-enhanced productivity.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 13,
+                            "claim": "The source text indicates emerging long-term changes in software engineering practices due to AI agents, including shifts in collaboration models, hiring practices, and required skill sets.",
+                            "evidence": "The text describes generational collaboration workflows (junior engineers using AI with senior review), cultural adaptations in hiring (shifting from algorithm memorization to system design and AI tool assessment), and the rise of AI-fluent skills (prompt engineering, tool proficiency, data management for AI integration).",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 14,
+                            "claim": "The integration of AI agents is leading to new software engineering practices that require data curation, model management, and ethical considerations.",
+                            "evidence": "Engineers must curate and preprocess data for AI consumption (e.g., splitting documentation, creating embeddings), manage model context, understand limitations like bias and hallucination, implement safety checks, and address ethical concerns like data privacy and fairness. These practices are becoming standard in AI-driven software development.",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 15,
+                            "claim": "AI agents are enabling non-programmers to create software, democratizing development practices.",
+                            "evidence": "The source describes how AI tools allow business analysts to generate code from natural language requests, enable domain experts (e.g., biologists, teachers) to create custom software without programming expertise, and reduce setup complexity for novice developers. It also mentions examples of non-software professionals building apps with AI assistance, such as kids and professionals using ChatGPT as a coding guide.",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 16,
+                            "claim": "AI agents are leading to new coding paradigms and workflows in software development.",
+                            "evidence": "The text discusses emerging practices such as chat-oriented programming (CHOP), vibe coding, agentic programming, multi-agent clusters, and AI-driven iterative debugging or on-the-fly documentation generation, which represent shifts in coding paradigms and workflows.",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 17,
+                            "claim": "AI agents are driving long-term changes in software engineering practices, including new roles, team composition, and standardization of AI interactions.",
+                            "evidence": "The text states that companies are creating new roles like AI tool specialists, rethinking team composition, and developing standards for AI interaction with development processes (e.g., the Model Context Protocol). It also mentions improved AI integration into IDEs, intelligent pair programming agents, and shifts in education and ethical considerations.",
+                            "confidence": 0.9
+                        }
+                    ]
+                },
+                {
+                    "title": "2026 Report on AI Agent Coding Trends: How AI Agents Are ...",
+                    "url": "https://apd.institute/emerging-technologies/ai-agent-coding-trends-2026/",
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "quality": 0.9,
+                        "reason": "The source is highly relevant as it directly addresses the research sub-question by detailing transformative shifts in software engineering practices driven by AI agents, such as agent-orchestration, compressed development cycles, and role transitions. The quality is excellent, with detailed core insights, concrete case studies, and strategic priorities, though some sections feel fragmented and repetitive."
+                    },
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "Software engineering practices are transitioning from code-centric to agent-orchestration-centric development, with AI agents handling complex tasks and reshaping roles.",
+                            "evidence": "The report states: 'software development is transitioning from a “code-centric” endeavor to an “agent-orchestration-centric” one.' It also mentions agents working autonomously for days to build complete systems, humans shifting to \"team leaders,\" and agents handling tasks like debugging, testing, and documentation.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 1,
+                            "claim": "AI agents are leading to changes in software engineering practices by enabling non-engineers to solve problems and integrating security into systems from the start.",
+                            "evidence": "The source describes how legal teams with no coding experience use agents to build tools, compressing contract review cycles. It also emphasizes integrating security architecture into agent systems from day one rather than as an afterthought.",
+                            "confidence": 0.95
+                        }
+                    ]
                 },
                 {
                     "title": "Generative AI and Empirical Software Engineering:",
                     "url": "https://arxiv.org/html/2502.08108v2",
-                    "snippet": "Nov 3, 2025 · Our aim is to help the empirical software engineering community adapt its questions, instruments, and validation standards to a future in which AI systems are not merely tools, but active collaborators shaping software engineering and its study.",
-                    "search_query": "Emerging trends in software engineering practices influenced by AI agents",
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "quality": 1.0,
+                        "reason": "The source is highly relevant (1.0) as it directly addresses AI's impact on empirical software engineering, covering topics like AI-mediated artifacts, validity threats, and methodological challenges. Its quality (1.0) is exceptional due to comprehensive analysis, systematic citations of prior work (e.g., [32]-[54]), and actionable recommendations for research practices, making it a foundational reference for understanding AI's role in software engineering research."
+                    },
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "AI agents are reshaping software engineering practices by altering developer roles, collaboration patterns, and empirical research methods.",
+                            "evidence": "The text states that LLMs and agentic AI technologies are transforming development practices, influencing delivery speed, software quality, collaboration patterns, and developer experience. It also mentions that traditional empirical methods are being disrupted and that research questions must evolve to address AI-mediated practices.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 1,
+                            "claim": "AI agents are causing shifts in software engineering practices by redefining developer roles and altering traditional constructs like 'developer', 'artifact', and 'coding'.",
+                            "evidence": "The text states that developers increasingly rely on AI to generate, refine, and explain code, shifting their efforts from writing to orchestrating and evaluating solutions. It also mentions that constructs such as 'developer', 'source code', and 'artifact' are becoming more fluid, and new practices like 'vibe coding' blur the line between 'user' and 'developer'. Additionally, AI tools now directly contribute to creating software artifacts, challenging conventional divisions between tools and collaborators.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 2,
+                            "claim": "Long-term changes in software engineering practices include shifts in team structures, skill development, and the need for longitudinal studies due to AI adoption.",
+                            "evidence": "The source text states: 'Conducting longitudinal and adaptive studies to examine how AI adoption influences practices, team structures, and skill development over time...' and emphasizes the necessity of 'longitudinal, adaptive, and replication-oriented designs' to sustain validity in AI-mediated environments.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 3,
+                            "claim": "AI agents are introducing new data sources and practices in software engineering, such as co-generated artifacts and AI-mediated development processes.",
+                            "evidence": "The text states that AI systems now co-generate software artifacts like bug reports, code-review comments, commit messages, forum responses, emails, source code, test cases, and UML diagrams. It also highlights the emergence of 'AI-mediated artifacts' with joint human-model provenance, and the need for new empirical methods to study these changes.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 4,
+                            "claim": "AI agents are leading to changes in software engineering practices, including shifts in prompt engineering, code homogenization, and altered mentorship dynamics.",
+                            "evidence": "The text discusses how developers craft, refine, and negotiate prompts with AI systems (e.g., DevGPT dataset), how AI-generated code may homogenize code and compress stylistic variation, and how mentorship and authorship change in AI-driven code-review workflows.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 5,
+                            "claim": "AI agents are driving long-term changes in software engineering practices by transforming developers' roles, reshaping artifacts, and redefining empirical research methods.",
+                            "evidence": "LLMs are transforming developers’ roles, reshaping artifacts, and redefining empirical research. As boundaries blur between human and machine, between artifact and interaction, and between subject and method, the empirical software engineering community must reassess its assumptions, adapt its practices, and embrace new lines of inquiry.",
+                            "confidence": 0.95
+                        }
+                    ]
+                },
+                {
+                    "title": "AI in software development - IBM",
+                    "url": "https://www.ibm.com/think/topics/ai-in-software-development",
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "quality": 0.85,
+                        "reason": "The source directly addresses the sub-question by detailing long-term changes in software engineering practices driven by AI agents, such as automated code generation, AI-driven testing, CI/CD optimization, and role shifts for developers. It provides specific examples (e.g., IBM Bob, GitHub Copilot) and discusses emerging workflows like no-code/low-code platforms. While the content is promotional (IBM branding), it remains high-quality with technical depth and actionable insights about AI's transformative impact on software development processes."
+                    },
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "AI agents are leading to long-term changes in software engineering practices by automating tasks and reshaping traditional methodologies.",
+                            "evidence": "The source text describes AI automating code generation, testing, deployment, project management, and DevOps processes. It also mentions AI's potential to render agile methodologies obsolete and its integration into all stages of the SDLC, including requirements gathering, design, and documentation.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 1,
+                            "claim": "AI is fundamentally altering software engineering practices by automating routine tasks and shifting engineers' roles toward higher-level problem-solving and collaboration with AI tools.",
+                            "evidence": "Generative AI automates code generation, testing, CI/CD pipelines, and documentation. It redefines engineers' roles from code implementers to orchestrators of technology, enabling focus on architectural planning, system integration, and innovation. AI also enables no-code/low-code platforms, democratizing access to AI tools for non-technical users.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 3,
+                            "claim": "AI agents are reshaping software engineering practices by automating coding tasks and modernizing legacy systems.",
+                            "evidence": "The source mentions large language models are reshaping software engineering—from writing new code to modernizing legacy systems at scale. IBM Bob™ enables AI-assisted application modernization, rapid development, and efficient software delivery by minimizing time spent on coding, debugging, refactoring, and code completion.",
+                            "confidence": 0.8
+                        }
+                    ]
+                },
+                {
+                    "title": "Agentic AI in software engineering | Deloitte US",
+                    "url": "https://www.deloitte.com/us/en/services/consulting/articles/agentic-ai-impact-on-software-engineering.html",
                     "evaluation": {
                         "relevance": 0.9,
                         "quality": 0.8,
-                        "reason": "The source directly addresses how AI systems are reshaping software engineering practices, focusing on empirical methods and adaptation to AI collaboration. However, the snippet is limited in detail, and the 2025 date raises questions about its timeliness and actual publication status."
+                        "reason": "The source directly addresses the sub-question by discussing AO-DLC as a paradigm shift in software engineering practices, role transitions from builders to supervisors, and risks like unmanaged autonomy. It provides concrete examples of changing workflows and organizational requirements. While the content is well-structured and includes practical insights, it lacks detailed technical depth and empirical evidence, relying more on strategic observations than rigorous analysis."
                     },
-                    "evidence": {
-                        "claim": "AI agents are leading to long-term changes in software engineering practices, particularly in empirical software engineering methods.",
-                        "evidence": "The source states that the empirical software engineering community must adapt its questions, instruments, and validation standards to account for AI systems acting as active collaborators rather than passive tools.",
-                        "confidence": 0.7
-                    }
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "AI agents are causing a shift in software engineering roles from hands-on coding to oversight and supervision.",
+                            "evidence": "As more of the life cycle becomes automated, the engineer’s role is shifting from hands-on builder to human-in-the-loop supervisor, guiding outcomes, validating quality, and providing strategic oversight.",
+                            "confidence": 1.0
+                        }
+                    ]
+                },
+                {
+                    "title": "AI IDEs or Autonomous Agents? Measuring the Impact of Coding ...",
+                    "url": "https://arxiv.org/html/2601.13597v1",
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "quality": 0.95,
+                        "reason": "The source is highly relevant (1.0) as it directly addresses the impact of agentic tools on software development velocity, quality, and maintainability through rigorous empirical analysis. The quality (0.95) is excellent, with detailed methodology (propensity score matching, DiD, event studies), robust controls, and nuanced findings about AI tool adoption effects, though minor limitations in generalizability might slightly reduce the score."
+                    },
+                    "evidence": [
+                        {
+                            "chunk_id": 0,
+                            "claim": "The adoption of AI agents in software development leads to persistent quality risks and increased technical debt over time.",
+                            "evidence": "Results show quality risks are persistent across settings, with static-analysis warnings and cognitive complexity rising roughly 18% and 35%, indicating sustained agent-induced complexity debt even when velocity advantages fade.",
+                            "confidence": 1.0
+                        },
+                        {
+                            "chunk_id": 1,
+                            "claim": "Agentic coding tools are influencing long-term software engineering practices by affecting development velocity and software quality in open-source repositories.",
+                            "evidence": "The study employs a quasi-experimental difference-in-differences design to measure the causal impact of LLM-based coding agents on project-level development velocity and software quality, comparing them to IDE-based AI assistants. It highlights that prior work shows short-term velocity gains but increased technical debt, while agentic tools exhibit mixed results, underscoring the need for longitudinal analysis of their real-world effects.",
+                            "confidence": 0.95
+                        },
+                        {
+                            "chunk_id": 2,
+                            "claim": "AI agent adoption leads to increased development velocity in repositories that adopt agentic tools as their first observable AI tool.",
+                            "evidence": "AF repos see large average gains (+36.3% commits; +76.6% lines added), whereas IF repos show minimal changes (+4.0% commits; +1.0% lines added).",
+                            "confidence": 0.9
+                        },
+                        {
+                            "chunk_id": 3,
+                            "claim": "AI agents introduce long-term complexity and maintainability risks in software engineering practices.",
+                            "evidence": "The source text states that agent adoption increases static-analysis warnings by 18% and cognitive complexity by 35%, with persistent complexity accumulation (AF repos: +20.7% at t=0, reaching ~+49% by t=5; IF repos: ~+44–+51% through t=6). It also highlights 'agent-induced complexity debt' and the need for quality safeguards like complexity-aware reviews and automated tests to prevent accumulating complexity.",
+                            "confidence": 0.95
+                        }
+                    ]
                 }
-            ],
-            "source_count": 2
+            ]
         }
     ]
 }

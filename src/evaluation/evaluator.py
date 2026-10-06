@@ -7,12 +7,19 @@ from ollama import chat
 MODEL = "qwen3:8b"
 
 
-def load_sources() -> dict:
+def load_source_chunks() -> dict:
     project_root = Path(__file__).resolve().parents[2]
-    sources_file = project_root / "data" / "sources.json"
+    source_chunks_file = project_root / "data" / "source_chunks.json"
 
-    with sources_file.open("r", encoding="utf-8") as file:
+    with source_chunks_file.open("r", encoding="utf-8") as file:
         return json.load(file)
+
+
+def combine_chunks(chunks: list[str]) -> str:
+    return "\n\n".join(
+        f"[Chunk {index + 1}]\n{chunk}"
+        for index, chunk in enumerate(chunks)
+    )
 
 
 def evaluate_source(
@@ -20,6 +27,8 @@ def evaluate_source(
     subquestion: str,
     source: dict,
 ) -> dict:
+    article_content = combine_chunks(source.get("chunks", []))
+
     prompt = f"""
 You are evaluating a source for an AI research system.
 
@@ -35,16 +44,19 @@ Source title:
 Source URL:
 {source.get("url", "")}
 
-Source snippet:
-{source.get("snippet", "")}
+Source content:
+{article_content}
 
-Evaluate how useful this source is for answering the research
+Evaluate the usefulness of this source for answering the research
 sub-question.
+
+Evaluate the source based on the actual source content above, not
+on its title alone.
 
 Give:
 1. A relevance score from 0 to 1.
 2. A quality score from 0 to 1.
-3. A brief reason.
+3. A brief reason explaining both the relevance and quality assessment.
 
 Return ONLY valid JSON in exactly this format:
 
@@ -80,7 +92,7 @@ Return ONLY valid JSON in exactly this format:
 
 
 def run_evaluation() -> dict:
-    data = load_sources()
+    data = load_source_chunks()
 
     evaluated_data = {
         "question": data["question"],
@@ -105,7 +117,8 @@ def run_evaluation() -> dict:
             )
 
             source_with_evaluation = {
-                **source,
+                "title": source.get("title", ""),
+                "url": source.get("url", ""),
                 "evaluation": evaluation,
             }
 

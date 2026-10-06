@@ -4,164 +4,337 @@ from pathlib import Path
 from ollama import chat
 
 
-# ---------------------------------------------------------
+# =========================================================
 # Configuration
-# ---------------------------------------------------------
+# =========================================================
 
 MODEL = "qwen3:8b"
 
 BASE_DIR = Path(__file__).resolve().parents[2]
+
 INPUT_FILE = BASE_DIR / "data" / "filtered_evidence.json"
 OUTPUT_FILE = BASE_DIR / "data" / "research_report.md"
 
 
-# ---------------------------------------------------------
-# Load filtered evidence
-# ---------------------------------------------------------
+# =========================================================
+# Load evidence
+# =========================================================
 
-def load_evidence():
-    with open(INPUT_FILE, "r", encoding="utf-8") as f:
-        return json.load(f)
+def load_evidence() -> dict:
+    with INPUT_FILE.open("r", encoding="utf-8") as file:
+        return json.load(file)
 
 
-# ---------------------------------------------------------
-# Build synthesis prompt
-# ---------------------------------------------------------
+# =========================================================
+# Prepare evidence for the model
+# =========================================================
 
-def build_prompt(data):
-    question = data["question"]
-    subquestions = data["subquestions"]
+def build_evidence_text(data: dict) -> str:
+    sections = []
 
-    evidence_sections = []
+    for subquestion_data in data.get("subquestions", []):
+        subquestion = subquestion_data.get("question", "")
+        sources = subquestion_data.get("sources", [])
 
-    for subquestion in subquestions:
-        subq = subquestion["question"]
-        sources = subquestion.get("sources", [])
-
-        evidence_sections.append(
-            f"\n## Research sub-question\n{subq}\n"
+        sections.append(
+            f"\n{'=' * 70}\n"
+            f"RESEARCH SUB-QUESTION\n"
+            f"{subquestion}\n"
+            f"{'=' * 70}\n"
         )
 
         if not sources:
-            evidence_sections.append(
-                "NO RELIABLE EVIDENCE WAS FOUND FOR THIS SUB-QUESTION.\n"
+            sections.append(
+                "NO ACCEPTED EVIDENCE WAS FOUND FOR THIS SUB-QUESTION.\n"
             )
             continue
 
-        for source in sources:
+        for source_index, source in enumerate(sources, start=1):
             title = source.get("title", "")
             url = source.get("url", "")
 
             evaluation = source.get("evaluation", {})
+
             relevance = evaluation.get("relevance", 0)
             quality = evaluation.get("quality", 0)
+            reason = evaluation.get("reason", "")
 
-            evidence = source.get("evidence", {})
-            claim = evidence.get("claim", "")
-            extracted_evidence = evidence.get("evidence", "")
-            confidence = evidence.get("confidence", 0)
+            evidence_items = source.get("evidence", [])
 
-            evidence_sections.append(
+            sections.append(
                 f"""
-SOURCE:
+SOURCE {source_index}
 Title: {title}
 URL: {url}
 
+Source evaluation:
 Relevance: {relevance}
 Quality: {quality}
-
-Claim:
-{claim}
-
-Evidence:
-{extracted_evidence}
-
-Confidence:
-{confidence}
+Reason: {reason}
 """
             )
 
-    evidence_text = "\n".join(evidence_sections)
+            if not evidence_items:
+                sections.append(
+                    "No evidence items were retained from this source.\n"
+                )
+                continue
+
+            for evidence_index, evidence in enumerate(
+                evidence_items,
+                start=1,
+            ):
+                sections.append(
+                    f"""
+Evidence item {evidence_index}:
+
+Claim:
+{evidence.get("claim", "")}
+
+Evidence:
+{evidence.get("evidence", "")}
+
+Confidence:
+{evidence.get("confidence", 0)}
+"""
+                )
+
+    return "\n".join(sections)
+
+
+# =========================================================
+# Build synthesis prompt
+# =========================================================
+
+def build_prompt(data: dict) -> str:
+    question = data.get("question", "")
+    subquestions = data.get("subquestions", [])
+
+    evidence_text = build_evidence_text(data)
+
+    section_instructions = []
+
+    for index, subquestion_data in enumerate(
+        subquestions,
+        start=1,
+    ):
+        subquestion = subquestion_data.get("question", "")
+
+        section_instructions.append(
+            f"""## {index}. {subquestion}
+
+Discuss ONLY evidence relevant to this sub-question.
+
+Do not answer this section using evidence belonging primarily
+to another sub-question.
+"""
+        )
+
+    sections = "\n".join(section_instructions)
 
     prompt = f"""
 You are the synthesis component of an AI research system.
 
-Research question:
+RESEARCH QUESTION
 {question}
 
-Your task is to synthesize the provided evidence into a coherent research report.
+You have been given a dataset containing evaluated and filtered
+research evidence.
 
-IMPORTANT RULES:
+Your task is to produce a rigorous research report using ONLY
+that evidence dataset.
 
-1. Use ONLY the evidence provided below.
-2. Do not invent facts, studies, statistics, examples, or conclusions.
-3. Do not fill gaps using your own knowledge.
-4. If a sub-question has no evidence, explicitly say that the
-   available research evidence in this dataset is insufficient.
-5. Give more weight to evidence with higher confidence, relevance,
-   and source quality.
-6. Do not treat a low-confidence claim as established fact.
-7. Identify conflicting evidence if it appears.
-8. Preserve the distinction between evidence and interpretation.
-9. Every important factual claim should be traceable to a source.
-10. Include source links in the report.
-11. Write a balanced research report rather than a list of disconnected summaries.
+============================================================
+ABSOLUTE EVIDENCE CONSTRAINT
+============================================================
 
-Structure the report as:
+The evidence dataset is the ONLY source of information available
+to you for this report.
+
+Do not use your pretrained knowledge.
+
+Do not add facts because they are generally known.
+
+Do not add examples, statistics, studies, organizations,
+technologies, claims, or conclusions that do not appear in the
+dataset.
+
+If the dataset does not support a claim, do not make the claim.
+
+============================================================
+EVIDENCE RULES
+============================================================
+
+1. Use ONLY the supplied evidence.
+
+2. Every factual claim must be traceable to supplied evidence.
+
+3. Prefer evidence with:
+   - higher confidence
+   - higher relevance
+   - higher source quality
+
+4. Do not present low-confidence evidence as established fact.
+
+5. If evidence conflicts, explicitly describe the conflict.
+
+6. If a sub-question has no accepted evidence, write:
+
+"The available evidence in this dataset is insufficient to
+answer this sub-question."
+
+7. Do not manufacture an answer for a sub-question merely because
+you know something about the topic.
+
+8. Keep evidence and interpretation distinct.
+
+9. Recommendations must be clearly identified as recommendations
+derived from the evidence.
+
+10. Do not turn correlation into causation.
+
+============================================================
+AI TERMINOLOGY
+============================================================
+
+Preserve the distinction between:
+
+- generative AI tools
+- AI assistants
+- AI agents
+- autonomous or agentic systems
+
+Do not call an ordinary AI coding assistant an autonomous agent
+unless the supplied evidence supports that characterization.
+
+============================================================
+SOURCE TRACEABILITY
+============================================================
+
+Important factual claims must include inline source citations.
+
+Use EXACTLY:
+
+[Source: TITLE]
+
+For multiple supporting sources:
+
+[Sources: TITLE 1; TITLE 2]
+
+Do not use:
+
+[Source 1]
+[Source 2]
+[Evidence 3]
+
+unless those labels are explicitly defined by the report.
+
+At the end, include every source actually used.
+
+Use:
+
+- TITLE — URL
+
+Never invent a URL.
+
+============================================================
+REPORT STRUCTURE
+============================================================
+
+Write exactly this structure:
 
 # {question}
 
 ## Executive Summary
 
-Provide a concise synthesis of the strongest findings.
+Summarize only the strongest supported findings across the
+dataset.
 
-## 1. Automation of Software Development Tasks
+Do not introduce information not present in the evidence.
 
-Discuss the evidence relevant to the first sub-question.
-
-## 2. Code Generation and Debugging
-
-Discuss the evidence relevant to the second sub-question.
-
-## 3. Human-AI Collaboration
-
-Discuss the evidence relevant to the third sub-question.
-If evidence is missing, explicitly state that.
-
-## 4. Software Quality and Reliability
-
-Discuss the evidence relevant to the fourth sub-question.
-
-## 5. Skills and Competencies
-
-Discuss the evidence relevant to the fifth sub-question.
-
-## 6. Ethical Considerations
-
-Discuss the evidence relevant to the sixth sub-question.
-
-## 7. Long-Term Changes in Software Engineering
-
-Discuss the evidence relevant to the seventh sub-question.
+{sections}
 
 ## Overall Assessment
 
-Synthesize the strongest conclusions across the evidence.
+Synthesize the strongest supported findings across the research
+question.
 
-Clearly distinguish well-supported conclusions from weaker or
-incomplete evidence.
+Clearly distinguish:
+
+- well-supported findings
+- weaker findings
+- areas where evidence is insufficient
+
+Do not introduce new evidence in this section.
 
 ## Limitations
 
-Explain important limitations in the evidence set, including
-missing evidence, low-confidence evidence, source quality, and
-limited source coverage.
+Discuss limitations visible in the supplied dataset, including:
+
+- missing evidence
+- weak source quality
+- low-confidence evidence
+- limited source coverage
+- conflicting evidence
+- concentration of evidence around particular sources
+
+Do not invent limitations that cannot be inferred from the
+dataset.
 
 ## Sources
 
-List the sources used in the report with their titles and URLs.
+List every source actually used.
 
-Here is the evidence dataset:
+Format:
+
+- Title — URL
+
+============================================================
+WRITING STYLE
+============================================================
+
+Write a coherent research report.
+
+Do NOT simply summarize each source separately.
+
+Synthesize overlapping evidence.
+
+For example, prefer:
+
+"Several sources indicate that AI-assisted development is
+automating repetitive coding and testing tasks..."
+
+rather than:
+
+"Source A says X. Source B says Y. Source C says Z."
+
+However, preserve source traceability using the required
+[Source: ...] notation.
+
+Do not exaggerate findings.
+
+Do not use unsupported superlatives such as "revolutionary",
+"massive", "profound", or "fundamental" unless the evidence
+itself supports such characterization.
+
+Do not add recommendations unless they are explicitly derived
+from the supplied evidence.
+
+============================================================
+SUB-QUESTION DISCIPLINE
+============================================================
+
+Each numbered section must answer ONLY its corresponding
+sub-question.
+
+Do not move evidence between sections simply because it is
+topically related.
+
+If evidence is missing for a section, say so explicitly.
+
+============================================================
+EVIDENCE DATASET
+============================================================
 
 {evidence_text}
 """
@@ -169,11 +342,11 @@ Here is the evidence dataset:
     return prompt
 
 
-# ---------------------------------------------------------
+# =========================================================
 # Generate report
-# ---------------------------------------------------------
+# =========================================================
 
-def synthesize(data):
+def synthesize(data: dict) -> str:
     prompt = build_prompt(data)
 
     print("\nGenerating research report...\n")
@@ -183,40 +356,45 @@ def synthesize(data):
         messages=[
             {
                 "role": "user",
-                "content": prompt
+                "content": prompt,
             }
-        ]
+        ],
     )
 
     return response["message"]["content"]
 
 
-# ---------------------------------------------------------
+# =========================================================
 # Save report
-# ---------------------------------------------------------
+# =========================================================
 
-def save_report(report):
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write(report)
+def save_report(report: str) -> None:
+    OUTPUT_FILE.write_text(
+        report,
+        encoding="utf-8",
+    )
 
     print(f"Research report saved to: {OUTPUT_FILE}")
 
 
-# ---------------------------------------------------------
+# =========================================================
 # Main
-# ---------------------------------------------------------
+# =========================================================
 
-def main():
+def main() -> None:
     print("=" * 70)
     print("AI RESEARCH SYSTEM — SYNTHESIS")
     print("=" * 70)
 
     data = load_evidence()
 
-    print(f"\nResearch question:")
+    print("\nResearch question:")
     print(data["question"])
 
-    print(f"\nSubquestions: {len(data['subquestions'])}")
+    print(
+        f"\nSubquestions: "
+        f"{len(data.get('subquestions', []))}"
+    )
 
     report = synthesize(data)
 

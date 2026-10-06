@@ -2,123 +2,175 @@ import json
 from pathlib import Path
 
 
-CONFIDENCE_THRESHOLD = 0.5
+MIN_EVIDENCE_CONFIDENCE = 0.60
+MIN_SOURCE_RELEVANCE = 0.50
+MIN_SOURCE_QUALITY = 0.50
 
 
-def load_evidence() -> dict:
-    project_root = Path(__file__).resolve().parents[2]
-    evidence_file = project_root / "data" / "evidence.json"
-
-    with evidence_file.open("r", encoding="utf-8") as file:
+def load_json(file_path: Path) -> dict:
+    with file_path.open("r", encoding="utf-8") as file:
         return json.load(file)
 
 
-def filter_sources(sources: list) -> list:
+def build_source_evaluation_map(evaluated_sources: dict) -> dict:
     """
-    Keep only usable evidence.
+    Build a lookup table:
 
-    A source is kept only when:
-    - confidence >= 0.5
-    - claim is not empty
-    - evidence is not empty
-    - URL has not already been seen
+        source URL -> evaluation
+
+    This allows evidence extracted from a source to inherit
+    that source's relevance and quality evaluation.
     """
 
-    filtered_sources = []
-    seen_urls = set()
+    evaluation_map = {}
 
-    for source in sources:
-        evidence = source.get("evidence", {})
+    for subquestion in evaluated_sources.get("subquestions", []):
+        for source in subquestion.get("sources", []):
+            url = source.get("url")
 
-        claim = str(evidence.get("claim", "")).strip()
-        extracted_evidence = str(
-            evidence.get("evidence", "")
-        ).strip()
+            if not url:
+                continue
 
-        confidence = evidence.get("confidence", 0)
+            evaluation_map[url] = source.get(
+                "evaluation",
+                {
+                    "relevance": 0.0,
+                    "quality": 0.0,
+                    "reason": "No evaluation available.",
+                },
+            )
 
-        try:
-            confidence = float(confidence)
-        except (TypeError, ValueError):
-            confidence = 0.0
-
-        url = source.get("url", "").strip()
-
-        # Reject low-confidence evidence.
-        if confidence < CONFIDENCE_THRESHOLD:
-            continue
-
-        # Reject sources with no extracted claim.
-        if not claim:
-            continue
-
-        # Reject sources with no extracted evidence.
-        if not extracted_evidence:
-            continue
-
-        # Reject duplicate URLs.
-        if url and url in seen_urls:
-            continue
-
-        if url:
-            seen_urls.add(url)
-
-        filtered_sources.append(source)
-
-    return filtered_sources
+    return evaluation_map
 
 
-def run_filter() -> dict:
-    data = load_evidence()
+def filter_evidence(
+    evidence_data: dict,
+    evaluated_sources: dict,
+) -> dict:
+
+    evaluation_map = build_source_evaluation_map(
+        evaluated_sources
+    )
 
     filtered_data = {
-        "question": data["question"],
+        "question": evidence_data["question"],
         "subquestions": [],
     }
 
-    for subquestion_data in data["subquestions"]:
-        question = subquestion_data["question"]
+    total_evidence = 0
+    accepted_evidence = 0
 
-        original_sources = subquestion_data.get(
-            "sources", []
-        )
+    for subquestion_data in evidence_data.get(
+        "subquestions", []
+    ):
 
-        filtered_sources = filter_sources(
-            original_sources
-        )
+        subquestion = subquestion_data["question"]
+
+        filtered_sources = []
+
+        for source in subquestion_data.get("sources", []):
+
+            url = source.get("url", "")
+
+            evaluation = evaluation_map.get(
+                url,
+                {
+                    "relevance": 0.0,
+                    "quality": 0.0,
+                    "reason": "Source was not evaluated.",
+                },
+            )
+
+            source_relevance = evaluation.get(
+                "relevance", 0.0
+            )
+
+            source_quality = evaluation.get(
+                "quality", 0.0
+            )
+
+            filtered_evidence_items = []
+
+            for evidence_item in source.get(
+                "evidence", []
+            ):
+
+                total_evidence += 1
+
+                confidence = evidence_item.get(
+                    "confidence", 0.0
+                )
+
+                if not isinstance(confidence, (int, float)):
+                    confidence = 0.0
+
+                if confidence < MIN_EVIDENCE_CONFIDENCE:
+                    continue
+
+                if source_relevance < MIN_SOURCE_RELEVANCE:
+                    continue
+
+                if source_quality < MIN_SOURCE_QUALITY:
+                    continue
+
+                filtered_evidence_items.append(
+                    evidence_item
+                )
+
+                accepted_evidence += 1
+
+            if filtered_evidence_items:
+
+                filtered_sources.append(
+                    {
+                        "title": source.get(
+                            "title", ""
+                        ),
+                        "url": url,
+                        "evaluation": evaluation,
+                        "evidence": filtered_evidence_items,
+                    }
+                )
 
         filtered_data["subquestions"].append(
             {
-                "question": question,
+                "question": subquestion,
                 "sources": filtered_sources,
-                "source_count": len(filtered_sources),
             }
         )
 
-        print("\n" + "=" * 70)
-        print(f"Sub-question:")
-        print(question)
+    print("\n" + "=" * 70)
+    print("EVIDENCE FILTER")
+    print("=" * 70)
 
-        print(
-            f"Sources before filtering: "
-            f"{len(original_sources)}"
-        )
+    print(
+        f"Total evidence items:     {total_evidence}"
+    )
 
-        print(
-            f"Sources after filtering:  "
-            f"{len(filtered_sources)}"
-        )
+    print(
+        f"Accepted evidence items:  {accepted_evidence}"
+    )
 
-        if not filtered_sources:
-            print(
-                "WARNING: No usable evidence found."
-            )
+    print(
+        f"Rejected evidence items:  "
+        f"{total_evidence - accepted_evidence}"
+    )
 
     return filtered_data
 
 
-if __name__ == "__main__":
+def main():
     project_root = Path(__file__).resolve().parents[2]
+
+    evidence_file = (
+        project_root / "data" / "evidence.json"
+    )
+
+    evaluated_sources_file = (
+        project_root
+        / "data"
+        / "evaluated_sources.json"
+    )
 
     output_file = (
         project_root
@@ -126,16 +178,30 @@ if __name__ == "__main__":
         / "filtered_evidence.json"
     )
 
-    results = run_filter()
+    evidence_data = load_json(evidence_file)
+
+    evaluated_sources = load_json(
+        evaluated_sources_file
+    )
+
+    filtered_data = filter_evidence(
+        evidence_data,
+        evaluated_sources,
+    )
 
     output_file.write_text(
         json.dumps(
-            results,
+            filtered_data,
             indent=4,
             ensure_ascii=False,
         ),
         encoding="utf-8",
     )
 
-    print("\n" + "=" * 70)
-    print(f"Saved to: {output_file}")
+    print(
+        f"\nSaved to: {output_file}"
+    )
+
+
+if __name__ == "__main__":
+    main()
