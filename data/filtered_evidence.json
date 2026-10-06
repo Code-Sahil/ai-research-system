@@ -1,0 +1,206 @@
+{
+    "question": "How are AI agents changing software engineering?",
+    "subquestions": [
+        {
+            "question": "How do AI agents automate repetitive tasks in software development?",
+            "sources": [
+                {
+                    "title": "How to Automate Repetitive Coding Tasks with AI",
+                    "url": "https://dev.to/raji_moshood_ee3a4c2638f6/how-to-automate-repetitive-coding-tasks-with-ai-322e",
+                    "snippet": "Mar 1, 2025 · Repetitive coding tasks—such as debugging, refactoring, and code generation—can now be automated using AI, significantly boosting productivity and reducing human error. In this article, we’ll explore how AI can automate coding workflows and the best tools available to streamline your development process. 🔹 Why Automate Coding Tasks?",
+                    "search_query": "Technical documentation on AI-driven tools for repetitive coding tasks",
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "quality": 0.8,
+                        "reason": "The source directly addresses the sub-question by discussing AI automation of repetitive coding tasks like debugging and refactoring. While the quality is good for a blog post, it lacks depth and citations to academic or industry research, limiting its rigor."
+                    },
+                    "evidence": {
+                        "claim": "AI agents automate repetitive coding tasks in software development.",
+                        "evidence": "The source states that repetitive coding tasks such as debugging, refactoring, and code generation can be automated using AI, which boosts productivity and reduces human error.",
+                        "confidence": 0.9
+                    }
+                }
+            ],
+            "source_count": 1
+        },
+        {
+            "question": "What role do AI agents play in code generation and debugging?",
+            "sources": [
+                {
+                    "title": "A Survey on Code Generation with LLM-based Agents - arXiv.org",
+                    "url": "https://arxiv.org/html/2508.00083v1",
+                    "snippet": "Abstract Code generation agents powered by large language models (LLMs) are revolutionizing the software development paradigm. Distinct from previous code generation techniques, code generation agents are characterized by three core features. 1) Autonomy: the ability to independently manage the entire workflow, from task decomposition to coding and debugging. 2) Expanded task scope ...",
+                    "search_query": "Role of AI agents in code generation and debugging: research studies",
+                    "evaluation": {
+                        "relevance": 0.95,
+                        "quality": 0.9,
+                        "reason": "The source directly addresses code generation with LLM-based agents, which is central to the sub-question. The abstract highlights autonomy, task scope, and workflow management features that align with AI agents' roles in code generation and debugging. As a survey on the topic, it provides comprehensive insights, though its preprint status may slightly affect quality compared to peer-reviewed works."
+                    },
+                    "evidence": {
+                        "claim": "AI agents are playing a significant role in code generation and debugging by autonomously managing the software development workflow.",
+                        "evidence": "Code generation agents powered by LLMs are characterized by autonomy, enabling them to independently manage the entire workflow from task decomposition to coding and debugging.",
+                        "confidence": 1.0
+                    }
+                },
+                {
+                    "title": "Autonomous Agents in Software Engineering: A Multi-Agent LLM Approach",
+                    "url": "https://www.researchgate.net/publication/388834987_Autonomous_Agents_in_Software_Engineering_A_Multi-Agent_LLM_Approach",
+                    "snippet": "This paper explores a multi-agent LLM approach, where autonomous agents perform various roles such as requirement analysis, code generation, testing, and debugging.",
+                    "search_query": "Role of AI agents in code generation and debugging: research studies",
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "quality": 0.8,
+                        "reason": "The source directly addresses code generation and debugging through a multi-agent LLM framework, aligning closely with the sub-question. The approach appears innovative and specific, though the quality is slightly tempered by limited detail in the snippet."
+                    },
+                    "evidence": {
+                        "claim": "AI agents play a role in code generation and debugging within software engineering.",
+                        "evidence": "The paper states that autonomous agents perform various roles including code generation and debugging as part of a multi-agent LLM approach.",
+                        "confidence": 1.0
+                    }
+                }
+            ],
+            "source_count": 2
+        },
+        {
+            "question": "How are human-AI collaboration patterns evolving in software engineering workflows?",
+            "sources": [],
+            "source_count": 0
+        },
+        {
+            "question": "What impact do AI agents have on software quality and reliability?",
+            "sources": [
+                {
+                    "title": "AI-Infused Test Automation Frameworks: Enhancing Software ...",
+                    "url": "https://www.researchgate.net/publication/389362250_AI-Infused_Test_Automation_Frameworks_Enhancing_Software_Quality_and_Reliability",
+                    "snippet": "Feb 1, 2025 · This comprehensive article explores the infusion of AI into test automation frameworks, examining its impact on software quality and reliability.",
+                    "search_query": "Effect of AI-driven development tools on software testing and maintenance reliability",
+                    "evaluation": {
+                        "relevance": 1.0,
+                        "quality": 0.9,
+                        "reason": "The source directly addresses the sub-question by focusing on AI's impact on software quality and reliability through test automation frameworks. The title and snippet indicate a comprehensive exploration of the topic, though the quality score is slightly lower due to the source's platform (ResearchGate) potentially hosting less rigorously peer-reviewed content compared to academic journals."
+                    },
+                    "evidence": {
+                        "claim": "AI-infused test automation frameworks are enhancing software quality and reliability.",
+                        "evidence": "The article explores the infusion of AI into test automation frameworks, examining its impact on software quality and reliability.",
+                        "confidence": 1.0
+                    }
+                },
+                {
+                    "title": "[2609.17698] A Large-Scale Empirical Study of Quality Assurance ...",
+                    "url": "https://arxiv.org/abs/2609.17698",
+                    "snippet": "Large language model (LLM)-based agents are increasingly used across software engineering, web automation, research, and productivity applications. Their integration of planning, memory, tool use, code execution, and external interactions enables greater autonomy but also introduces new reliability, safety, and security risks. We present a large-scale empirical study of quality assurance (QA ...",
+                    "search_query": "Impact of AI agents on software quality and reliability: empirical research studies",
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "quality": 0.8,
+                        "reason": "The source directly addresses the impact of AI agents on software quality through empirical analysis, making it highly relevant. Its focus on quality assurance and large-scale study contributes to its quality, though the preprint status may slightly affect credibility."
+                    },
+                    "evidence": {
+                        "claim": "AI agents impact software quality and reliability by introducing new risks.",
+                        "evidence": "LLM-based agents integrate planning, memory, tool use, code execution, and external interactions, which enable greater autonomy but also introduce new reliability, safety, and security risks.",
+                        "confidence": 0.9
+                    }
+                }
+            ],
+            "source_count": 2
+        },
+        {
+            "question": "What new skills or competencies are required for software engineers with AI integration?",
+            "sources": [
+                {
+                    "title": "AI Engineer Skills in 2026: The Complete Checklist",
+                    "url": "https://aiengineerinsights.com/blog/ai-engineer-skills/",
+                    "snippet": "Aug 14, 2026 · Here's the honest skill list for an AI engineer in 2026 — the technical core, the LLM skills that define the role today, the soft skills that get you promoted, what to prioritize by seniority, and what's overrated. For each skill: what it means and how to prove you have it. 1. The Skill Stack in One Picture.",
+                    "search_query": "Emerging skills required for software engineers integrating AI technologies",
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "quality": 0.8,
+                        "reason": "The source directly addresses the sub-question by outlining AI-specific skills for engineers, but its quality is slightly lower due to being a blog post rather than a peer-reviewed or academic resource."
+                    },
+                    "evidence": {
+                        "claim": "The source discusses new skills required for software engineers integrating AI, but does not specify which skills.",
+                        "evidence": "The snippet mentions a skill list for AI engineers in 2026, categorizing skills into technical core, LLM skills, soft skills, and seniority priorities. However, it does not explicitly detail the specific new competencies or skills required due to AI integration.",
+                        "confidence": 0.5
+                    }
+                },
+                {
+                    "title": "Guide to Essential Competencies for AI",
+                    "url": "https://thealliance.ai/core-projects/guide-to-essential-competencies-for-ai",
+                    "snippet": "Inside the guide, you will find essential competencies defined to help bridge the AI divide, which support a framework for education and training curricula and can help promote inclusive access to AI education.",
+                    "search_query": "Competencies needed for AI integration in software engineering roles",
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "quality": 0.8,
+                        "reason": "The source directly addresses the sub-question by focusing on essential competencies for AI, which aligns with identifying new skills for software engineers. However, the quality is slightly lower due to limited detail in the snippet about the specific competencies outlined."
+                    },
+                    "evidence": {
+                        "claim": "Software engineers require new skills or competencies to integrate AI effectively.",
+                        "evidence": "The guide defines essential competencies to bridge the AI divide, supporting education frameworks and promoting inclusive access to AI education.",
+                        "confidence": 0.5
+                    }
+                }
+            ],
+            "source_count": 2
+        },
+        {
+            "question": "How do AI agents influence ethical considerations in software development?",
+            "sources": [
+                {
+                    "title": "New ethics risks courtesy of AI agents? Researchers are on the case - IBM",
+                    "url": "https://www.ibm.com/think/insights/ai-agent-ethics",
+                    "snippet": "Existing AI governance solutions can help support the ethics of AI agents, with software tools already empowering organizations to monitor, evaluate and address biases stemming from training datasets and algorithms that might skew decision-making processes. These tools can also help developers and companies ensure that the AI tools they're using meet current trustworthy AI standards ...",
+                    "search_query": "How do AI agents impact ethical considerations in software engineering?",
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "quality": 0.7,
+                        "reason": "The source directly addresses ethical risks associated with AI agents and discusses governance tools for ensuring trustworthy AI, making it highly relevant. However, its quality is moderate due to limited depth in analyzing specific ethical challenges or providing detailed case studies."
+                    },
+                    "evidence": {
+                        "claim": "AI agents introduce new ethical risks that can be mitigated through existing AI governance solutions.",
+                        "evidence": "Existing AI governance solutions can help support the ethics of AI agents, with software tools already empowering organizations to monitor, evaluate and address biases stemming from training datasets and algorithms that might skew decision-making processes. These tools can also help developers and companies ensure that the AI tools they're using meet current trustworthy AI standards.",
+                        "confidence": 1.0
+                    }
+                }
+            ],
+            "source_count": 1
+        },
+        {
+            "question": "What long-term changes in software engineering practices are emerging due to AI agents?",
+            "sources": [
+                {
+                    "title": "Generative AI and the Transformation of Software Development ...",
+                    "url": "https://arxiv.org/html/2510.10819v1",
+                    "snippet": "Oct 12, 2025 · This paper examines how AI-assisted techniques are transforming software engineering practices, alongside the emerging challenges of trust, accountability, and required skill shifts.",
+                    "search_query": "Emerging trends in software engineering practices influenced by AI agents",
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "quality": 0.8,
+                        "reason": "The source directly addresses AI's impact on software engineering practices and discusses emerging challenges and skill shifts, aligning with the sub-question. However, the snippet's brevity and preprint status limit depth, though the arXiv platform suggests credible academic rigor."
+                    },
+                    "evidence": {
+                        "claim": "AI agents are leading to long-term changes in software engineering practices.",
+                        "evidence": "The paper examines how AI-assisted techniques are transforming software engineering practices, alongside emerging challenges of trust, accountability, and required skill shifts.",
+                        "confidence": 0.5
+                    }
+                },
+                {
+                    "title": "Generative AI and Empirical Software Engineering:",
+                    "url": "https://arxiv.org/html/2502.08108v2",
+                    "snippet": "Nov 3, 2025 · Our aim is to help the empirical software engineering community adapt its questions, instruments, and validation standards to a future in which AI systems are not merely tools, but active collaborators shaping software engineering and its study.",
+                    "search_query": "Emerging trends in software engineering practices influenced by AI agents",
+                    "evaluation": {
+                        "relevance": 0.9,
+                        "quality": 0.8,
+                        "reason": "The source directly addresses how AI systems are reshaping software engineering practices, focusing on empirical methods and adaptation to AI collaboration. However, the snippet is limited in detail, and the 2025 date raises questions about its timeliness and actual publication status."
+                    },
+                    "evidence": {
+                        "claim": "AI agents are leading to long-term changes in software engineering practices, particularly in empirical software engineering methods.",
+                        "evidence": "The source states that the empirical software engineering community must adapt its questions, instruments, and validation standards to account for AI systems acting as active collaborators rather than passive tools.",
+                        "confidence": 0.7
+                    }
+                }
+            ],
+            "source_count": 2
+        }
+    ]
+}
